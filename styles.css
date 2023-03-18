@@ -43,6 +43,8 @@ body {
   align-items: start;
   justify-content: center;
   border-bottom: 2px solid #b38140;
+  animation: slideUp 0.3s linear 1 forwards;
+  -webkit-animation: slideUp 0.3s linear 1 forwards;
 }
 
 /*------ Sticky Navbar -------*/
@@ -53,13 +55,24 @@ body {
   width: 100vw;
   z-index: 999;
   overflow: hidden;
-  animation: slideDown 0.19s linear 1 forwards;
-  -webkit-animation: slideDown 0.19s linear 1 forwards;
+  animation: slideDown 0.3s linear 1 forwards;
+  -webkit-animation: slideDown 0.3s linear 1 forwards;
 }
 
 @keyframes slideDown {
   0% {
     height: 0;
+  }
+
+  100% {
+    height: 9rem;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    height: 0;
+    overflow: hidden;
   }
 
   100% {
@@ -625,7 +638,7 @@ footer p {
   align-self: flex-start;
   margin: 0 !important;
   font-size: 1.4rem;
-  color: #202020;
+  color: #84818a;
   font-weight: 500;
 }
 .modal-header a {
@@ -676,6 +689,12 @@ footer p {
 }
 .modal-form .form-floating-name {
   width: 50%;
+}
+.form-floating-first-name {
+  margin-right: 0.5rem;
+}
+.form-floating-last-name {
+  margin-left: 0.5rem;
 }
 .modal-form-tel {
   display: flex;
@@ -1016,6 +1035,10 @@ footer p {
     max-width: 100vw;
   }
 
+  .sticky-navbar-height {
+    height: 18.5rem !important;
+  }
+
   .container-fluid {
     display: flex !important;
     flex-direction: row;
@@ -1024,15 +1047,23 @@ footer p {
 
   .hide {
     display: none !important;
-    opacity: 0;
-    animation: display 1s ease-out, opacity 1s ease-in !important;
-    -webkit-animation: display 1s ease-out, opacity 1s ease-in !important;
   }
-  .show {
+  .show-nav {
     display: flex !important;
     flex-direction: column !important;
-    opacity: 1;
     margin-top: 2rem;
+    animation: navOpen 0.3s ease-in 1 forwards !important;
+    -webkit-animation: navOpen 0.3s ease-in 1 forwards !important;
+  }
+
+  @keyframes navOpen {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 8rem;
+    }
   }
   .navbar-icon-menus {
     width: 100%;
@@ -1388,7 +1419,11 @@ footer p {
   .footer-logo {
     width: 10rem !important;
     height: 8rem !important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .fourth-column {
+    height: 45% !important;
   }
 
   .fourth-column ul li img {
@@ -1435,7 +1470,7 @@ footer p {
   }
 
   .modal-title {
-    font-size: 2.4rem !important;
+    font-size: 3rem !important;
   }
 
   .modal-header .modal-title,
