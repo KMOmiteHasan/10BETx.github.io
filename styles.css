@@ -1402,7 +1402,18 @@ footer p {
   }
 
   .footer-row {
+    width: 100rem;
+  }
+
+  .footer-row {
     height: 50rem;
+  }
+
+  .footer-row .first-column ul li a,
+  .footer-row .second-column ul li a,
+  .footer-row .third-column ul li a,
+  .footer-row .fourth-column ul li a {
+    font-size: 1rem;
   }
 
   .footer-row h1 {
@@ -1442,10 +1453,6 @@ footer p {
   body {
     background-color: #090d28;
     font-size: 4px;
-  }
-
-  .footer-row {
-    width: 75rem;
   }
 
   .footer-row h1 {

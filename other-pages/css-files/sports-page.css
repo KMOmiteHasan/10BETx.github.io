@@ -1,0 +1,804 @@
+/*----------------------------*/
+/* Google Fonts */
+/*----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*----------------------------*/
+/* Basic Setup */
+/*----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #090d28;
+  font-size: 10px;
+}
+
+.mainSportsBettingContents {
+  width: 100vw;
+}
+
+.main-contents-row {
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  align-items: self-start;
+  justify-content: space-between !important;
+}
+
+.betting-content-left {
+  width: 14vw !important;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.betting-content-left .left-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.betting-content-left .left-btn button {
+  width: 22%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #f8d63a;
+  background-color: #fff;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #f8d63a;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -ms-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.betting-content-left .left-btn button:hover,
+.betting-content-left .left-btn button:focus,
+.betting-content-left .left-btn button:active {
+  color: #fff;
+  background-color: #f8d63a;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -moz-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -ms-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.betting-content-left .left-btn select {
+  width: 36%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #f8d63a;
+  padding: 0.5rem 0;
+  border: 1px solid #f8d63a;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+.betting-content-left .left-btn select option {
+  width: 34%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #f8d63a;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
+
+.betting-content-left .left-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.betting-content-left .left-search input {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.33rem;
+  color: rgba(0, 0, 0, 0.45);
+  border: 1px solid #bbb;
+  padding: 0.4rem 1rem;
+  border-right: 0;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.betting-content-left .left-search button {
+  width: 20% !important;
+  border: 1px solid #bbb;
+  border-left: 0;
+  padding: 0.4rem 0.5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.betting-content-left .left-search button img {
+  width: 85%;
+}
+
+.left-filter-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.left-filter-btn a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #000;
+  padding: 1rem 1rem;
+}
+
+.left-filter-btn a:hover,
+.left-filter-btn a:focus {
+  outline: 1px solid #aaa;
+}
+
+.betting-content-center {
+  width: 56vw !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.betting-content-center #main-img {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.betting-content-center #main-img img {
+  width: 100%;
+  transform: scale(1.018);
+  -webkit-transform: scale(1.018);
+  -moz-transform: scale(1.018);
+  -ms-transform: scale(1.018);
+  -o-transform: scale(1.018);
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-center #main-img img:hover,
+.betting-content-center #main-img img:focus {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-center .content-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: #f8d63a;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.betting-content-center .content-navigation a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.betting-content-center .content-navigation a:hover,
+.betting-content-center .content-navigation a:focus {
+  text-decoration: underline;
+}
+
+.betting-contents {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.betting-contents-head {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #777;
+}
+
+.betting-contents-head,
+.betting-contents-body {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.left-content {
+  width: 60% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.right-content {
+  width: 40% !important;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.betting-contents-head .left-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  align-self: center !important;
+  color: #000;
+}
+
+.betting-contents-head .right-content p {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.betting-contents-head .right-content p span {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.betting-contents-head .right-content p span img {
+  margin-right: 0.5rem;
+  width: 1.3rem;
+  height: 1.4rem;
+}
+
+.betting-contents-head .right-content p:last-child span:first-child {
+  width: 65%;
+}
+
+.betting-contents-body {
+  margin-bottom: 1rem;
+}
+
+.betting-contents-body .left-content img {
+  margin-right: 1rem;
+  cursor: pointer;
+  width: 2.1rem;
+  height: 2rem;
+}
+
+.betting-contents-body .left-content p {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 1.05rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+  color: #000;
+  margin-right: 0.8rem;
+}
+
+.betting-contents-body .left-content p:last-child {
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+
+.betting-contents-body .left-content p span {
+  margin-bottom: 0.5rem;
+}
+
+.light-color {
+  color: rgba(0, 0, 0, 0.45);
+  font-weight: 400;
+}
+
+.betting-contents-body .right-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.betting-contents-body .right-content p {
+  display: flex;
+  flex-direction: row;
+  width: 42%;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.275rem;
+  color: #000;
+}
+
+.betting-content-right {
+  width: 22vw !important;
+}
+
+.betting-content-right-first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #233255, #1b2641);
+  padding: 1rem 0.8rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.betting-content-right-first .btn-container,
+.betting-content-right-first .radio-container,
+.betting-content-right-first #placeBet,
+.betting-content-right-first .money-container,
+.betting-content-right-first .bet-container,
+.betting-content-right-first .footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.3rem;
+}
+
+.betting-content-right-first .btn-container button {
+  width: 48%;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-right-first .btn-container button:hover,
+.betting-content-right-first .btn-container button:focus {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-right-first .btn-container button:first-child {
+  background: linear-gradient(to right, #207ed8, #1859c2);
+}
+.betting-content-right-first .btn-container button:last-child {
+  background: #36415b;
+}
+
+.betting-content-right-first .radio-container .form-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.betting-content-right-first .radio-container .form-check-input {
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+.betting-content-right-first .radio-container .form-check-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 0;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.betting-content-right-first #placeBet {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #6b7ca2;
+  background: #d1daf2;
+  padding: 0.2rem 0.8rem;
+  outline: 0;
+  border: 1.2rem solid #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.betting-content-right-first .money-container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.betting-content-right-first .money-container p span {
+  font-weight: 400 !important;
+  flex-direction: column;
+  color: #999;
+}
+.betting-content-right-first .money-container .green-text span {
+  font-weight: 600 !important;
+  flex-direction: column;
+  color: #27bb62 !important;
+}
+
+.betting-content-right-first .money-container .green-text span:last-child {
+  align-self: flex-end;
+}
+
+.betting-content-right-first .bet-container input {
+  width: 56%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #efefef !important;
+  background: #fff;
+  padding: 0.6rem 0.8rem;
+  outline: 0;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.betting-content-right-first .bet-container button {
+  width: 38%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #efefef !important;
+  background: linear-gradient(to right, #1a71c0, #154b99);
+  padding: 0.7rem 2rem;
+  border: 1px;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-right-first .bet-container button:hover,
+.betting-content-right-first .bet-container button:focus {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-right-first .footer-container .form-check {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+}
+
+.betting-content-right-first .footer-container .form-check-input {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+
+.betting-content-right-first .footer-container .form-check-label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.betting-content-right-first .footer-container a {
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-right-first .footer-container a:hover,
+.betting-content-right-first .footer-container a:focus {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease-in;
+  -webkit-transition: transform 0.3s ease-in;
+  -moz-transition: transform 0.3s ease-in;
+  -ms-transition: transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+}
+
+.betting-content-right-first .footer-container img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.betting-content-right-first #betSubmit {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #fdcd36;
+  padding: 1rem 1rem !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 0.1px;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.betting-content-right-first #betSubmit:hover,
+.betting-content-right-first #betSubmit:focus {
+  background: #aa8b24;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.betting-content-right-second {
+  width: 100%;
+  margin-top: 3rem;
+}
+.betting-content-right-second img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 8.5px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
+  .betting-content-left .left-search button {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .betting-content-left .left-search button img {
+    width: 1.4rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
+  .betting-content-left .left-search button {
+    height: 3.2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 4.5px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 4px;
+  }
+  .betting-content-left .left-search button {
+    height: 3.3rem;
+  }
+  .betting-content-left .left-search button img {
+    width: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 3.5px;
+  }
+  .betting-content-left .left-search button {
+    height: 3.3rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 3px;
+  }
+  .betting-content-left .left-search button {
+    height: 3.3rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 2.5px;
+  }
+  .betting-content-left .left-search button {
+    height: 3.3rem;
+  }
+}
