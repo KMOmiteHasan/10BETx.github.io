@@ -98,7 +98,6 @@ body {
   font-weight: 600;
   font-size: 1.4rem;
   color: #fff;
-  background-color: #f8d63a;
   padding: 0.5rem 0;
   border: 1px solid #f8d63a;
   cursor: pointer;
@@ -107,6 +106,13 @@ body {
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
   -o-border-radius: 0.3rem;
+  -webkit-appearance: none;
+  background: url(../../resources/img/downwards-button.png) no-repeat right
+    #f8d63a;
+  background-size: 2rem 2rem;
+  /* height: 5rem; */
+  cursor: pointer;
+  outline: 0;
 }
 .betting-content-left .left-btn select option {
   width: 34%;
@@ -498,7 +504,7 @@ body {
 .betting-content-right-first .radio-container .form-check-input {
   width: 1.8rem;
   height: 1.8rem;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .betting-content-right-first .radio-container .form-check-label {
   font-family: "Roboto", sans-serif;
@@ -620,6 +626,7 @@ body {
   height: 2rem;
   margin-right: 1rem;
   border-radius: 0.6rem;
+  cursor: pointer !important;
   -webkit-border-radius: 0.6rem;
   -moz-border-radius: 0.6rem;
   -ms-border-radius: 0.6rem;
@@ -631,6 +638,7 @@ body {
   font-size: 1.4rem;
   font-weight: 400;
   color: #fff;
+  cursor: pointer !important;
 }
 
 .betting-content-right-first .footer-container a {
@@ -714,6 +722,9 @@ body {
   width: 100%;
 }
 
+/*----------------------------*/
+/* Media Queries For Responsiveness*/
+/*----------------------------*/
 @media only screen and (max-width: 1080px) {
   html {
     font-size: 9px;
@@ -759,11 +770,66 @@ body {
   .betting-content-left .left-search button {
     height: 3.2rem;
   }
+  .left-filter-btn a {
+    padding: 1rem 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   html {
     font-size: 4.5px;
+  }
+
+  .betting-content-right-first .btn-container button {
+    padding: 0.1rem 1rem;
+  }
+
+  .betting-content-right-first .radio-container .form-check-input {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .betting-content-right-first .radio-container .form-check-label {
+    font-size: 1.35rem;
+  }
+
+  .betting-content-right-first #placeBet {
+    font-size: 1.35rem;
+    padding: 0.1rem 0.8rem;
+  }
+
+  .betting-content-right-first .bet-container input {
+    font-size: 1.35rem;
+    padding: 0.1rem 0.8rem;
+  }
+
+  .betting-content-right-first .bet-container button {
+    font-size: 1.35rem;
+    padding: 0.1rem 2rem;
+  }
+
+  .betting-content-right-first .footer-container .form-check-input {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .betting-content-right-first .footer-container .form-check-label {
+    font-size: 1.35rem;
+  }
+
+  .betting-content-right-first .footer-container a {
+    padding: 0.1rem 0.5rem;
+  }
+
+  .betting-content-right-first .footer-container img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .betting-content-right-first #betSubmit {
+    padding: 0.1rem 1rem !important;
+    font-size: 1.4rem;
   }
 }
 @media only screen and (max-width: 450px) {

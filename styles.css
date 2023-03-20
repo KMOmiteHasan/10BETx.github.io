@@ -49,7 +49,7 @@ body {
 
 /*------ Sticky Navbar -------*/
 .sticky-navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100vw;
@@ -65,18 +65,18 @@ body {
   }
 
   100% {
-    height: 9rem;
+    height: 10rem;
   }
 }
 
 @keyframes slideUp {
   0% {
-    height: 0;
+    height: 10rem;
     overflow: hidden;
   }
 
   100% {
-    height: 9rem;
+    height: 10rem;
   }
 }
 /*------ Sticky Navbar Finish -------*/
@@ -594,11 +594,11 @@ footer p {
 /* Registration Widget*/
 /*----------------------------*/
 .modal-dialog {
-  max-width: 40vw !important;
+  max-width: 60vw !important;
 }
 
 .modal-content {
-  width: 40vw !important;
+  width: 60vw !important;
   position: relative;
   display: flex;
   align-items: center;
@@ -623,6 +623,7 @@ footer p {
 .modal-header {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .modal-title {
@@ -630,6 +631,7 @@ footer p {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #202020;
+  width: 100%;
 }
 
 .modal-header p {
@@ -712,18 +714,31 @@ footer p {
   display: flex;
   flex-direction: row;
 }
+
 .tel-box select {
-  width: 15% !important;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  cursor: pointer;
+  -webkit-appearance: none;
+  background: url(resources/img/downwards-button.png) no-repeat right #ccc;
+  background-size: 2rem 2rem;
+  width: 25% !important;
   font-size: 1.2rem;
-  color: #84818a;
+  border: 0;
+  height: 5rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: #000;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  outline: 0;
+  padding: 1rem 1rem 1rem 0.4rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
+
 .tel-box .form-floating {
-  width: 85% !important;
+  width: 75% !important;
 }
 
 .modal-footer {
@@ -766,8 +781,8 @@ footer p {
 
 .modal-footer .form-check .form-check-input {
   color: #fff;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0.5rem;
   border: 1px solid #f8d63a;
   outline: none;
@@ -949,6 +964,7 @@ footer p {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #2c2c2e;
+  margin-left: 0.8rem;
 }
 
 /*----------------------------*/
@@ -1172,6 +1188,10 @@ footer p {
     background-color: #090d28;
     font-size: 7.1px;
     overflow-x: hidden;
+  }
+
+  .sticky-navbar {
+    position: fixed !important;
   }
 
   .footer-row {
@@ -1402,18 +1422,8 @@ footer p {
   }
 
   .footer-row {
-    width: 100rem;
-  }
-
-  .footer-row {
+    width: 86rem;
     height: 50rem;
-  }
-
-  .footer-row .first-column ul li a,
-  .footer-row .second-column ul li a,
-  .footer-row .third-column ul li a,
-  .footer-row .fourth-column ul li a {
-    font-size: 1rem;
   }
 
   .footer-row h1 {
@@ -1424,12 +1434,12 @@ footer p {
   .footer-row .second-column ul li a,
   .footer-row .third-column ul li a,
   .footer-row .fourth-column ul li a {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .footer-logo {
-    width: 10rem !important;
-    height: 8rem !important;
+    width: 12rem !important;
+    height: 9rem !important;
     margin-bottom: 2.5rem;
   }
 
@@ -1438,13 +1448,13 @@ footer p {
   }
 
   .fourth-column ul li img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .fourth-column-lg-icons li img {
-    width: 7rem !important;
-    height: 2.5rem;
+    width: 9rem !important;
+    height: 3rem;
   }
 }
 
@@ -1504,6 +1514,23 @@ footer p {
     background-color: #090d28;
     font-size: 3px;
   }
+
+  .footer-logo {
+    width: 10rem !important;
+    height: 8rem !important;
+    margin-bottom: 2.5rem;
+  }
+
+  .fourth-column ul li img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .fourth-column-lg-icons li img {
+    width: 7rem !important;
+    height: 2.5rem;
+  }
+
   .modal-dialog {
     max-width: 60vw !important;
     margin: 0 auto !important;
@@ -1526,5 +1553,21 @@ footer p {
   #signInModal .modal-dialog .modal-content {
     width: 50vw !important;
     padding: 3rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .footer-row {
+    width: 67rem;
+  }
+  .footer-row h1 {
+    font-size: 1.6rem;
+  }
+
+  .footer-row .first-column ul li a,
+  .footer-row .second-column ul li a,
+  .footer-row .third-column ul li a,
+  .footer-row .fourth-column ul li a {
+    font-size: 1rem;
   }
 }
