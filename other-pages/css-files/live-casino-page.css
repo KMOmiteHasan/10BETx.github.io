@@ -1,0 +1,291 @@
+/*----------------------------*/
+/* Google Fonts */
+/*----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*----------------------------*/
+/* Basic Setup */
+/*----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #090d28;
+  font-size: 10px;
+}
+
+/*----------------------------*/
+/* Live Casino Content Section*/
+/*----------------------------*/
+.liveCasinoContent {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100vw;
+  height: 49rem;
+  margin-top: 2rem !important;
+}
+.main-image img {
+  width: 100vw;
+  height: 49rem;
+}
+
+.live-main-bet-contents {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.buttonHolder {
+  display: flex;
+  flex-direction: row;
+  background: #272735;
+  position: relative;
+  width: 100%;
+  top: -2rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.buttonHolder-search,
+.buttonHolder-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonHolder-search {
+  width: 25%;
+  margin: 1rem 0;
+}
+
+.buttonHolder-search .left-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonHolder-search .left-search input {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.45);
+  border: 1px solid #bbb;
+  padding: 0.6rem 1rem;
+  border-right: 0;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.buttonHolder-search .left-search button {
+  width: 20% !important;
+  border: 1px solid #bbb;
+  border-left: 0;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.buttonHolder-search .left-search button img {
+  width: 2rem !important;
+}
+
+.buttonHolder-search button[type="button"] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  background-color: #f8d63a;
+  color: #000;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: background-color 0.25s ease-in;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+}
+
+.buttonHolder-search button[type="button"]:hover,
+.buttonHolder-search button[type="button"]:focus {
+  background-color: #c5a828;
+  transition: background-color 0.25s ease-in;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+}
+
+.buttonHolder-filter {
+  width: 75%;
+  margin-left: 1rem;
+}
+
+.buttonHolder-filter .nav-pills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.buttonHolder-filter .nav-pills .filter-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0.9rem;
+  justify-content: start;
+  cursor: pointer;
+}
+
+.buttonHolder-filter .nav-pills .active {
+  background-color: #f8d63a;
+}
+
+.buttonHolder-filter .nav-pills .active .filter-link {
+  color: #000;
+}
+.buttonHolder-filter .nav-pills .active .vector-block span {
+  color: #000;
+}
+.buttonHolder-filter .nav-pills .active .vector-block img {
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.buttonHolder-filter .nav-pills .vector-block {
+  position: relative;
+  padding: 1rem 1.2rem 1rem 0;
+}
+
+.buttonHolder-filter .nav-pills .vector-block span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  top: -0.2rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.buttonHolder-filter .nav-pills img {
+  width: 2rem;
+  margin: 0;
+}
+
+.buttonHolder-filter .nav-pills .filter-link {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.mainContent-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 5rem;
+}
+
+.bet-first-column,
+.bet-second-column,
+.bet-third-column,
+.bet-fourth-column,
+.bet-fifth-column,
+.bet-sixth-column,
+.bet-seventh-column,
+.bet-eighth-column,
+.bet-ninth-column,
+.bet-tenth-column,
+.bet-eleventh-column,
+.bet-twelfth-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 17vw;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-image-container {
+  overflow: hidden;
+}
+
+.card:hover .card-img-top,
+.card:focus .card-img-top {
+  transform: scale(1.09);
+  -webkit-transform: scale(1.09);
+  -moz-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  -o-transform: scale(1.09);
+  transition: transform 0.25s ease-in;
+  -webkit-transition: transform 0.25s ease-in;
+  -moz-transition: transform 0.25s ease-in;
+  -ms-transition: transform 0.25s ease-in;
+  -o-transition: transform 0.25s ease-in;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 18.8rem !important;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transition: transform 0.25s ease-in;
+  -webkit-transition: transform 0.25s ease-in;
+  -moz-transition: transform 0.25s ease-in;
+  -ms-transition: transform 0.25s ease-in;
+  -o-transition: transform 0.25s ease-in;
+}
