@@ -1,0 +1,397 @@
+/*----------------------------*/
+/* Google Fonts */
+/*----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/* font-family: 'Exo 2', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/*----------------------------*/
+/* Basic Setup */
+/*----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #090d28;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*----------------------------*/
+/* JetX Page Main Content Section*/
+/*----------------------------*/
+.jetXMainContent {
+  background: #090d28 url("../../resources/jetx-page-img/main.jpg") no-repeat
+    center;
+  background-size: cover;
+  width: 100vw;
+  height: 108rem !important;
+  display: flex;
+  margin: 5rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jetXContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: 72vw;
+  height: 38.5rem;
+  margin: 14.5rem auto 0;
+}
+
+.jetXFirstCol,
+.jetXSecondCol {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.jetXFirstCol .colOne,
+.jetXFirstCol .colTwo {
+  width: 14.2vw;
+  border-top: 1px solid #fff;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.jetXFirstCol .colTwo {
+  width: 17vw;
+}
+
+.jetXSecondCol .colOne,
+.jetXSecondCol .colTwo {
+  width: 14.2vw;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.jetXFirstCol .colOne::after {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-top: 1px solid #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.jetXFirstCol .colTwo::after {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-left: 1px solid #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.jetXSecondCol .colOne::after {
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.jetXSecondCol .colTwo::after {
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  left: -1rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.jetXContent a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #efc02c;
+}
+
+.jetXContent a:hover,
+.jetXContent a:focus {
+  text-decoration: underline;
+}
+
+.jetXButton button {
+  width: 14vw;
+  height: 6.2rem;
+  font-weight: 500;
+  font-size: 3.375rem;
+  color: #000000;
+  background: #fff212;
+  margin-top: 12.2rem;
+  text-align: center;
+  border: 0;
+  border-radius: 2.813rem;
+  -webkit-border-radius: 2.813rem;
+  -moz-border-radius: 2.813rem;
+  -ms-border-radius: 2.813rem;
+  -o-border-radius: 2.813rem;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.jetXButton button:hover,
+.jetXButton button:focus {
+  background: #b9b000;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.jetXTerms {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12.8rem;
+}
+
+.jetXTerms img {
+  width: 6.25vw;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.jetXTerms a {
+  font-weight: 400;
+  font-size: 2.4125rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+}
+
+.jetXTerms a:hover,
+.jetXTerms a:focus {
+  color: #999;
+  transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+}
+
+.jetXTerms a:first-child::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+  width: 47vw;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #efc02c;
+}
+
+.jetXTerms a:last-child::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15.5rem;
+  width: 47vw;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #efc02c;
+}
+
+.jetXFooter {
+  width: 18vw;
+  height: 4rem;
+  align-self: last baseline;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  background-color: #fff212;
+}
+
+.jetXFooter a {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.44rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.jetXFooter a:hover,
+.jetXFooter a:focus {
+  text-decoration: underline;
+}
+
+.contactBtn {
+  position: fixed;
+  bottom: 8vh;
+  right: 0;
+  cursor: pointer;
+}
+
+.contactBtn img {
+  width: 11.5vw;
+  height: 7rem;
+}
+
+/*----------------------------*/
+/* Media Queries For Responsiveness*/
+/*----------------------------*/
+@media only screen and (max-width: 1140px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  html,
+  body {
+    font-size: 8.8px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  html,
+  body {
+    font-size: 8.5px;
+  }
+  .jetXFirstCol,
+  .jetXSecondCol {
+    font-size: 1.9rem;
+  }
+
+  .jetXFirstCol .colOne {
+    width: 14.8vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+  .jetXFirstCol,
+  .jetXSecondCol {
+    font-size: 1.8rem;
+  }
+  .jetXFirstCol .colTwo {
+    width: 17.2vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html,
+  body {
+    font-size: 7.5px;
+  }
+  .jetXButton button {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html,
+  body {
+    font-size: 7.25px;
+  }
+  .jetXFirstCol .colTwo {
+    width: 17.5vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  html,
+  body {
+    font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  html,
+  body {
+    font-size: 4px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html,
+  body {
+    font-size: 3px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  html,
+  body {
+    font-size: 2px;
+  }
+}
