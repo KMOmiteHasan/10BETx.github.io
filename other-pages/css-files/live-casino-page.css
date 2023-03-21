@@ -22,6 +22,7 @@ html {
 body {
   background-color: #090d28;
   font-size: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 /*----------------------------*/
@@ -86,7 +87,6 @@ body {
 
 .buttonHolder-search .left-search input {
   width: 80%;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.45);
@@ -121,12 +121,12 @@ body {
 }
 
 .buttonHolder-search button[type="button"] {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.4rem;
   padding: 0.6rem 1rem;
   background-color: #f8d63a;
   color: #000;
+  border: none;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
@@ -199,7 +199,6 @@ body {
 }
 
 .buttonHolder-filter .nav-pills .vector-block span {
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   position: absolute;
@@ -215,7 +214,6 @@ body {
 }
 
 .buttonHolder-filter .nav-pills .filter-link {
-  font-family: "Roboto", sans-serif;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.4rem;
@@ -251,18 +249,28 @@ body {
   margin-bottom: 1rem;
 }
 
+.card-link {
+  text-decoration: none;
+}
+
 .card {
   width: 17vw;
   cursor: pointer;
   overflow: hidden;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .card-image-container {
   overflow: hidden;
 }
 
-.card:hover .card-img-top,
-.card:focus .card-img-top {
+.card-img-top {
+  width: 100%;
+  height: 18.8rem !important;
   transform: scale(1.09);
   -webkit-transform: scale(1.09);
   -moz-transform: scale(1.09);
@@ -275,9 +283,8 @@ body {
   -o-transition: transform 0.25s ease-in;
 }
 
-.card-img-top {
-  width: 100%;
-  height: 18.8rem !important;
+.card:hover .card-img-top,
+.card:focus .card-img-top {
   transform: scale(1.02);
   -webkit-transform: scale(1.02);
   -moz-transform: scale(1.02);
@@ -288,4 +295,400 @@ body {
   -moz-transition: transform 0.25s ease-in;
   -ms-transition: transform 0.25s ease-in;
   -o-transition: transform 0.25s ease-in;
+}
+
+.card-body {
+  background-color: #272735;
+  font-weight: 400;
+  font-size: 1.40625rem;
+  width: 100%;
+  height: 4.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.card:hover .card-body,
+.card:focus .card-body {
+  text-decoration: underline;
+}
+
+/*----------------------------*/
+/* Media Queries For Responsiveness*/
+/*----------------------------*/
+@media only screen and (max-width: 1240px) {
+  .buttonHolder-search {
+    width: 25%;
+    margin: 1rem 0;
+  }
+
+  .buttonHolder-search .left-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .buttonHolder-search .left-search input {
+    font-size: 1.35rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.4rem;
+  }
+
+  .buttonHolder-search .left-search button img {
+    width: 1.8rem !important;
+  }
+
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.35rem;
+    padding: 0.7rem 0.8rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.6rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.9rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.5rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.6rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.8rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.32rem;
+  }
+
+  .card-img-top {
+    height: 16.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+
+  .live-main-bet-contents {
+    width: 92vw;
+  }
+
+  .buttonHolder-search .left-search input {
+    font-size: 1.3rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.4rem;
+  }
+
+  .buttonHolder-search .left-search button img {
+    width: 1.8rem !important;
+  }
+
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.3rem;
+    padding: 0.7rem 0.5rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.7rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.3rem;
+  }
+  .card-body {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+
+  .live-main-bet-contents {
+    width: 93vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html,
+  body {
+    font-size: 7.5px;
+  }
+
+  .live-main-bet-contents {
+    width: 95vw !important;
+  }
+
+  .buttonHolder-search .left-search input {
+    font-size: 1.25rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.4rem;
+  }
+
+  .buttonHolder-search .left-search button img {
+    width: 1.8rem !important;
+  }
+
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.25rem;
+    padding: 0.7rem 0.5rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.7rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.6rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.25rem;
+  }
+  .card-body {
+    font-size: 1.25rem;
+  }
+
+  .card-img-top {
+    height: 15rem !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.3rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  html,
+  body {
+    font-size: 6.5px;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.42rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.55rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 6px;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.42rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    padding: 0.8rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.55rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.22rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html,
+  body {
+    font-size: 5.5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    font-size: 5px;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.5rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.2rem;
+  }
+  .card-img-top {
+    height: 14rem !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html,
+  body {
+    font-size: 4.5px;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  html,
+  body {
+    font-size: 4px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.45rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html,
+  body {
+    font-size: 3.5px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-search .left-search input {
+    font-size: 1.15rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.2rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.15rem;
+    padding: 0.7rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.45rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 301px) {
+  html,
+  body {
+    font-size: 3px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-search .left-search input {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.2rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.1rem;
+    padding: 0.8rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.4rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  html,
+  body {
+    font-size: 2.5px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-search .left-search input {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.2rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.1rem;
+    padding: 0.8rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.4rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.1rem;
+  }
 }
