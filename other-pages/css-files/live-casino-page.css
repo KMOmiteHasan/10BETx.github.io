@@ -90,7 +90,7 @@ body {
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(0, 0, 0, 0.45);
-  border: 1px solid #bbb;
+  border: 0;
   padding: 0.6rem 1rem;
   border-right: 0;
   border-radius: 0.5rem;
@@ -104,9 +104,9 @@ body {
 
 .buttonHolder-search .left-search button {
   width: 20% !important;
-  border: 1px solid #bbb;
+  border: 0;
   border-left: 0;
-  height: 3.5rem;
+  height: 3.3rem;
   border-radius: 0.5rem;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -336,7 +336,7 @@ body {
   }
 
   .buttonHolder-search .left-search button {
-    height: 3.4rem;
+    height: 3.2rem;
   }
 
   .buttonHolder-search .left-search button img {
@@ -345,7 +345,7 @@ body {
 
   .buttonHolder-search button[type="button"] {
     font-size: 1.35rem;
-    padding: 0.7rem 0.8rem;
+    padding: 0.6rem 0.8rem;
   }
 
   .buttonHolder-filter {
@@ -376,7 +376,7 @@ body {
   }
 
   .buttonHolder-search .left-search button {
-    height: 3.5rem;
+    height: 3.3rem;
   }
 
   .buttonHolder-filter {
@@ -420,7 +420,7 @@ body {
   }
 
   .buttonHolder-search .left-search button {
-    height: 3.4rem;
+    height: 3.2rem;
   }
 
   .buttonHolder-search .left-search button img {
@@ -429,7 +429,7 @@ body {
 
   .buttonHolder-search button[type="button"] {
     font-size: 1.3rem;
-    padding: 0.7rem 0.5rem;
+    padding: 0.6rem 0.5rem;
   }
 
   .buttonHolder-filter {
@@ -483,7 +483,7 @@ body {
   }
 
   .buttonHolder-search .left-search button {
-    height: 3.4rem;
+    height: 3.1rem;
   }
 
   .buttonHolder-search .left-search button img {
@@ -492,7 +492,7 @@ body {
 
   .buttonHolder-search button[type="button"] {
     font-size: 1.25rem;
-    padding: 0.7rem 0.5rem;
+    padding: 0.6rem 0.5rem;
   }
 
   .buttonHolder-filter {
@@ -530,7 +530,7 @@ body {
   }
 
   .buttonHolder-search .left-search button {
-    height: 3.3rem;
+    height: 3.1rem;
   }
 }
 
@@ -540,7 +540,7 @@ body {
     font-size: 6.5px;
   }
   .buttonHolder-search .left-search button {
-    height: 3.42rem;
+    height: 3.1rem;
   }
   .buttonHolder-filter .nav-pills img {
     width: 1.55rem;
@@ -553,10 +553,10 @@ body {
     font-size: 6px;
   }
   .buttonHolder-search .left-search button {
-    height: 3.42rem;
+    height: 3.1rem;
   }
   .buttonHolder-search button[type="button"] {
-    padding: 0.8rem 0.8rem;
+    padding: 0.7rem 0.8rem;
   }
   .buttonHolder-filter .nav-pills img {
     width: 1.55rem;
@@ -571,12 +571,18 @@ body {
   body {
     font-size: 5.5px;
   }
+  .buttonHolder-search button[type="button"] {
+    padding: 0.6rem 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   html,
   body {
     font-size: 5px;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3rem;
   }
   .buttonHolder-filter .nav-pills img {
     width: 1.5rem;
@@ -625,11 +631,11 @@ body {
     padding: 0.5rem 0.8rem;
   }
   .buttonHolder-search .left-search button {
-    height: 3.2rem;
+    height: 2.5rem;
   }
   .buttonHolder-search button[type="button"] {
     font-size: 1.15rem;
-    padding: 0.7rem 0.8rem;
+    padding: 0.6rem 0.8rem;
   }
   .buttonHolder-filter .nav-pills img {
     width: 1.45rem;
@@ -652,11 +658,11 @@ body {
     padding: 0.5rem 0.8rem;
   }
   .buttonHolder-search .left-search button {
-    height: 3.2rem;
+    height: 2.7rem;
   }
   .buttonHolder-search button[type="button"] {
     font-size: 1.1rem;
-    padding: 0.8rem 0.8rem;
+    padding: 0.7rem 0.8rem;
   }
   .buttonHolder-filter .nav-pills img {
     width: 1.4rem;
@@ -679,11 +685,11 @@ body {
     padding: 0.5rem 0.8rem;
   }
   .buttonHolder-search .left-search button {
-    height: 3.2rem;
+    height: 2.7rem;
   }
   .buttonHolder-search button[type="button"] {
     font-size: 1.1rem;
-    padding: 0.8rem 0.8rem;
+    padding: 0.7rem 0.8rem;
   }
   .buttonHolder-filter .nav-pills img {
     width: 1.4rem;
