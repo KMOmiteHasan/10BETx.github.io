@@ -386,11 +386,11 @@ body {
   overflow: hidden;
   outline: 0;
   text-decoration: none;
-  border-radius: 1rem;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
   box-shadow: 0;
   transform: scale(1.01);
   -webkit-transform: scale(1.01);
