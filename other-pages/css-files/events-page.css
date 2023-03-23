@@ -528,6 +528,10 @@ body {
   justify-content: center;
   color: #f8d63a;
 }
+.betting-contents-body .right-content p:last-child span:first-child img {
+  width: 2.42rem;
+  height: 2.4rem;
+}
 
 .betting-content-body-right {
   width: 10vw;
