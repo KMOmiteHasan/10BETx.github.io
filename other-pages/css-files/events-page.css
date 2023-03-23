@@ -679,68 +679,14 @@ body {
     font-size: 4.5px;
   }
 
-  .betting-content-right-first .btn-container button {
-    padding: 0.1rem 1rem;
-  }
-
-  .betting-content-right-first .radio-container .form-check-input {
-    width: 1.6rem;
-    height: 1.6rem;
-  }
-
-  .betting-content-right-first .radio-container .form-check-label {
-    font-size: 1.35rem;
-  }
-
-  .betting-content-right-first #placeBet {
-    font-size: 1.35rem;
-    padding: 0.1rem 0.8rem;
-  }
-
-  .betting-content-right-first .bet-container input {
-    font-size: 1.35rem;
-    padding: 0.1rem 0.8rem;
-  }
-
-  .betting-content-right-first .bet-container button {
-    font-size: 1.35rem;
-    padding: 0.1rem 2rem;
-  }
-
-  .betting-content-right-first .footer-container .form-check-input {
-    width: 1.8rem;
-    height: 1.8rem;
-    margin-right: 0.5rem;
-  }
-
-  .betting-content-right-first .footer-container .form-check-label {
-    font-size: 1.35rem;
-  }
-
-  .betting-content-right-first .footer-container a {
-    padding: 0.1rem 0.5rem;
-  }
-
-  .betting-content-right-first .footer-container img {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  .betting-content-right-first #betSubmit {
-    padding: 0.1rem 1rem !important;
-    font-size: 1.4rem;
+  .betting-content-left .left-third-row .search-btn button {
+    height: 3.3rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
   html {
     font-size: 4px;
-  }
-  .betting-content-left .left-search button {
-    height: 3.3rem;
-  }
-  .betting-content-left .left-search button img {
-    width: 1rem !important;
   }
 }
 
