@@ -1,0 +1,746 @@
+/*----------------------------*/
+/* Google Fonts */
+/*----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*----------------------------*/
+/* Basic Setup */
+/*----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #090d28;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*----------------------------*/
+/* Live Casino Content Section*/
+/*----------------------------*/
+.slotContent {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100vw;
+  height: 49rem;
+  margin-top: 2rem !important;
+}
+.main-image img {
+  width: 100vw;
+  height: 49rem;
+}
+
+.slot-main-bet-contents {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.buttonHolder {
+  display: flex;
+  flex-direction: row;
+  background: #272735;
+  position: relative;
+  width: 100%;
+  top: -2rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.buttonHolder-search,
+.buttonHolder-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonHolder-search {
+  width: 25%;
+  margin: 1rem 0;
+}
+
+.buttonHolder-search .left-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buttonHolder-search .left-search input {
+  width: 80%;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.45);
+  border: 0;
+  padding: 0.6rem 1rem;
+  border-right: 0;
+  border-radius: 0.5rem;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.buttonHolder-search .left-search button {
+  width: 20% !important;
+  border: 0;
+  border-left: 0;
+  height: 3.3rem;
+  border-radius: 0.5rem;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.buttonHolder-search .left-search button img {
+  width: 2rem !important;
+}
+
+.buttonHolder-search button[type="button"] {
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  background-color: #f8d63a;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: background-color 0.25s ease-in;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+}
+
+.buttonHolder-search button[type="button"]:hover,
+.buttonHolder-search button[type="button"]:focus {
+  background-color: #c5a828;
+  transition: background-color 0.25s ease-in;
+  -webkit-transition: background-color 0.25s ease-in;
+  -moz-transition: background-color 0.25s ease-in;
+  -ms-transition: background-color 0.25s ease-in;
+  -o-transition: background-color 0.25s ease-in;
+}
+
+.buttonHolder-filter {
+  width: 75%;
+  margin-left: 1rem;
+}
+
+.buttonHolder-filter .nav-pills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.buttonHolder-filter .nav-pills .filter-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0.9rem;
+  justify-content: start;
+  cursor: pointer;
+}
+
+.buttonHolder-filter .nav-pills .active {
+  background-color: #f8d63a;
+}
+
+.buttonHolder-filter .nav-pills .active .filter-link {
+  color: #000;
+}
+.buttonHolder-filter .nav-pills .active .vector-block span {
+  color: #000;
+}
+.buttonHolder-filter .nav-pills .active .vector-block img {
+  background-color: #000;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.buttonHolder-filter .nav-pills .vector-block {
+  position: relative;
+  padding: 1rem 1.2rem 1rem 0;
+}
+
+.buttonHolder-filter .nav-pills .vector-block span {
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  top: -0.2rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.buttonHolder-filter .nav-pills img {
+  width: 2rem;
+  margin: 0;
+}
+
+.buttonHolder-filter .nav-pills .filter-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.mainContent-button-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: 6rem;
+}
+
+.mainContent-button-holder button {
+  font-weight: 500;
+  font-size: 1.5rem;
+  background: #272933;
+  border-radius: 0.188rem;
+  -webkit-border-radius: 0.188rem;
+  -moz-border-radius: 0.188rem;
+  -ms-border-radius: 0.188rem;
+  -o-border-radius: 0.188rem;
+  color: #fff;
+  padding: 0 1rem;
+  height: 3rem;
+  border: 0;
+  outline: 0;
+  margin-left: 1rem;
+}
+
+.mainContent-button-holder .active {
+  background: #efc02c;
+}
+
+.mainContent-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 5rem;
+}
+
+.bet-first-column,
+.bet-second-column,
+.bet-third-column,
+.bet-fourth-column,
+.bet-fifth-column,
+.bet-sixth-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4.8rem;
+}
+
+.column-heading {
+  align-self: flex-start;
+  margin-bottom: 2.7rem;
+  font-weight: 500;
+  font-size: 2.4375rem;
+  color: #efc02c;
+}
+
+.first-column,
+.second-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.first-column {
+  margin-bottom: 1.6rem;
+}
+
+.box-link {
+  text-decoration: none;
+}
+
+.box {
+  width: 17vw;
+  cursor: pointer;
+  overflow: hidden;
+  border: 0.2rem solid #fff;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.box-image-container {
+  overflow: hidden;
+}
+
+.box-img-top {
+  width: 100%;
+  height: 19rem !important;
+  transform: scale(1.09);
+  -webkit-transform: scale(1.09);
+  -moz-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  -o-transform: scale(1.09);
+  transition: transform 0.25s ease-in;
+  -webkit-transition: transform 0.25s ease-in;
+  -moz-transition: transform 0.25s ease-in;
+  -ms-transition: transform 0.25s ease-in;
+  -o-transition: transform 0.25s ease-in;
+}
+
+.box:hover .box-img-top,
+.box:focus .box-img-top {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transition: transform 0.25s ease-in;
+  -webkit-transition: transform 0.25s ease-in;
+  -moz-transition: transform 0.25s ease-in;
+  -ms-transition: transform 0.25s ease-in;
+  -o-transition: transform 0.25s ease-in;
+}
+
+.box-body {
+  background-color: #272735;
+  font-weight: 400;
+  font-size: 1.40625rem;
+  width: 100%;
+  height: 4.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.box:hover .box-body,
+.box:focus .box-body {
+  text-decoration: underline;
+}
+
+/*----------------------------*/
+/* Media Queries For Responsiveness*/
+/*----------------------------*/
+@media only screen and (max-width: 1240px) {
+  .buttonHolder-search {
+    width: 25%;
+    margin: 1rem 0;
+  }
+
+  .buttonHolder-search .left-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .buttonHolder-search .left-search input {
+    font-size: 1.35rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.2rem;
+  }
+
+  .buttonHolder-search .left-search button img {
+    width: 1.8rem !important;
+  }
+
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.35rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.6rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.9rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  html,
+  body {
+    font-size: 9.5px;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.3rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.6rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.8rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.32rem;
+  }
+
+  .box-img-top {
+    height: 16.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+
+  .live-main-bet-contents {
+    width: 92vw;
+  }
+
+  .buttonHolder-search .left-search input {
+    font-size: 1.3rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.2rem;
+  }
+
+  .buttonHolder-search .left-search button img {
+    width: 1.8rem !important;
+  }
+
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.3rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.7rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.3rem;
+  }
+  .box-body {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html,
+  body {
+    font-size: 8px;
+  }
+
+  .live-main-bet-contents {
+    width: 93vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html,
+  body {
+    font-size: 7.5px;
+  }
+
+  .live-main-bet-contents {
+    width: 95vw !important;
+  }
+
+  .buttonHolder-search .left-search input {
+    font-size: 1.25rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.1rem;
+  }
+
+  .buttonHolder-search .left-search button img {
+    width: 1.8rem !important;
+  }
+
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.25rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .buttonHolder-filter {
+    margin-left: 0.7rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-item {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttonHolder-filter .nav-pills .vector-block {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .buttonHolder-filter .nav-pills img {
+    width: 1.6rem;
+    margin: 0;
+  }
+
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.25rem;
+  }
+  .box-body {
+    font-size: 1.25rem;
+  }
+
+  .box-img-top {
+    height: 15rem !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html,
+  body {
+    font-size: 7px;
+  }
+
+  .buttonHolder-search .left-search button {
+    height: 3.1rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  html,
+  body {
+    font-size: 6.5px;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.1rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.55rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 6px;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3.1rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    padding: 0.7rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.55rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.22rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  html,
+  body {
+    font-size: 5.5px;
+  }
+  .buttonHolder-search button[type="button"] {
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html,
+  body {
+    font-size: 5px;
+  }
+  .buttonHolder-search .left-search button {
+    height: 3rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.5rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.2rem;
+  }
+  .box-img-top {
+    height: 14rem !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html,
+  body {
+    font-size: 4.5px;
+  }
+}
+
+@media only screen and (max-width: 401px) {
+  html,
+  body {
+    font-size: 4px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.45rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html,
+  body {
+    font-size: 3.5px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-search .left-search input {
+    font-size: 1.15rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .buttonHolder-search .left-search button {
+    height: 2.5rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.15rem;
+    padding: 0.6rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.45rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.15rem;
+  }
+}
+
+@media only screen and (max-width: 301px) {
+  html,
+  body {
+    font-size: 3px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-search .left-search input {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .buttonHolder-search .left-search button {
+    height: 2.7rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.1rem;
+    padding: 0.7rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.4rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  html,
+  body {
+    font-size: 2.5px;
+  }
+  .live-main-bet-contents {
+    width: 96vw;
+  }
+  .buttonHolder-search .left-search input {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .buttonHolder-search .left-search button {
+    height: 2.7rem;
+  }
+  .buttonHolder-search button[type="button"] {
+    font-size: 1.1rem;
+    padding: 0.7rem 0.8rem;
+  }
+  .buttonHolder-filter .nav-pills img {
+    width: 1.4rem;
+  }
+  .buttonHolder-filter .nav-pills .filter-link {
+    font-size: 1.1rem;
+  }
+}
