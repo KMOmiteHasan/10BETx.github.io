@@ -26,7 +26,7 @@ body {
 }
 
 /*----------------------------*/
-/* Live Casino Content Section*/
+/* slot Casino Content Section*/
 /*----------------------------*/
 .slotContent {
   width: 100vw;
@@ -422,7 +422,7 @@ body {
   }
 
   .buttonHolder-search .left-search button {
-    height: 3.3rem;
+    height: 3.1rem;
   }
 
   .buttonHolder-filter {
@@ -456,8 +456,8 @@ body {
     font-size: 9px;
   }
 
-  .live-main-bet-contents {
-    width: 92vw;
+  .slot-main-bet-contents {
+    width: 93vw;
   }
 
   .buttonHolder-search .left-search input {
@@ -508,8 +508,8 @@ body {
     font-size: 8px;
   }
 
-  .live-main-bet-contents {
-    width: 93vw;
+  .slot-main-bet-contents {
+    width: 94vw;
   }
 }
 
@@ -519,7 +519,7 @@ body {
     font-size: 7.5px;
   }
 
-  .live-main-bet-contents {
+  .slot-main-bet-contents {
     width: 95vw !important;
   }
 
@@ -653,7 +653,7 @@ body {
   body {
     font-size: 4px;
   }
-  .live-main-bet-contents {
+  .slot-main-bet-contents {
     width: 96vw;
   }
   .buttonHolder-filter .nav-pills img {
@@ -669,8 +669,8 @@ body {
   body {
     font-size: 3.5px;
   }
-  .live-main-bet-contents {
-    width: 96vw;
+  .slot-main-bet-contents {
+    width: 97vw;
   }
   .buttonHolder-search .left-search input {
     font-size: 1.15rem;
@@ -696,8 +696,8 @@ body {
   body {
     font-size: 3px;
   }
-  .live-main-bet-contents {
-    width: 96vw;
+  .slot-main-bet-contents {
+    width: 97vw;
   }
   .buttonHolder-search .left-search input {
     font-size: 1.1rem;
@@ -723,8 +723,8 @@ body {
   body {
     font-size: 2.5px;
   }
-  .live-main-bet-contents {
-    width: 96vw;
+  .slot-main-bet-contents {
+    width: 97vw;
   }
   .buttonHolder-search .left-search input {
     font-size: 1.1rem;

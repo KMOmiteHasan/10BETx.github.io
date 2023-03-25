@@ -376,12 +376,12 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .main-contents-row .second-column-head .menu-logos-btn a {
   width: 23.5vw;
   height: 9.5rem;
-  margin-top: 2.2rem;
   cursor: pointer;
   overflow: hidden;
   outline: 0;
@@ -392,35 +392,75 @@ body {
   -ms-border-radius: 2.5rem;
   -o-border-radius: 2.5rem;
   box-shadow: 0;
-  transform: scale(1.01);
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -webkit-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -moz-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -ms-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
 }
 
-.main-contents-row .second-column-head .menu-logos-btn a:hover {
+.main-contents-row .second-column-head .menu-logos-btn a:hover,
+.main-contents-row .second-column-head .menu-logos-btn a:focus {
   box-shadow: 0 0.1rem 2rem #444;
-  transform: scale(1.01);
-  -webkit-transform: scale(1.01);
-  -moz-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  -o-transform: scale(1.01);
-  transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -webkit-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -moz-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -ms-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in, box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
 }
 
 .main-contents-row .second-column-head .menu-logos-btn img {
   width: 23.5vw !important;
   height: 9.5rem;
+}
+
+.main-contents-row .second-column-body {
+  width: 100%;
+}
+
+.main-contents-row .second-column-body .content-logos {
+  width: 100%;
+  height: 23.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.main-contents-row .second-column-body .content-logos a {
+  width: 47.9vw;
+  height: 23.4rem;
+  cursor: pointer;
+  overflow: hidden;
+  outline: 0;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  box-shadow: 0;
+  transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-contents-row .second-column-body .content-logos a:hover,
+.main-contents-row .second-column-body .content-logos a:focus {
+  box-shadow: 0 0.1rem 2rem #444;
+  transition: box-shadow 0.3s ease-in-out;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  -ms-transition: box-shadow 0.3s ease-in-out;
+  -o-transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-contents-row .second-column-body .content-logos a img {
+  width: 47.9vw;
+  height: 23.4rem;
 }
 
 .main-contents-row .second-column .first-list a,
