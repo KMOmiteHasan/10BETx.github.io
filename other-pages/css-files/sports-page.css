@@ -151,6 +151,9 @@ body {
   border: 1px solid #bbb;
   padding: 0.4rem 1rem;
   border-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
@@ -165,6 +168,9 @@ body {
   border: 1px solid #bbb;
   border-left: 0;
   height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0.5rem;
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
@@ -724,6 +730,21 @@ body {
   width: 100%;
 }
 
+.betting-content-right-third {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.betting-content-right-third a {
+  width: 100%;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.betting-content-right-third img {
+  width: 100%;
+}
+
 /*----------------------------*/
 /* Media Queries For Responsiveness*/
 /*----------------------------*/
@@ -769,9 +790,39 @@ body {
   html {
     font-size: 5px;
   }
+  .betting-content-left .left-btn {
+    flex-direction: column !important;
+  }
+
   .betting-content-left .left-search button {
     height: 3.2rem;
   }
+
+  .betting-content-left .left-btn button {
+    width: 100%;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .betting-content-left .left-btn select {
+    width: 100%;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .betting-content-left .left-btn select option {
+    width: 70% !important;
+    font-size: 2rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .betting-content-left .left-search input {
+    padding: 0.4rem 0 0.4rem 0.5rem;
+  }
+
+  .betting-content-left .left-search button {
+    padding: 0;
+    height: 3.1rem;
+  }
+
   .left-filter-btn a {
     padding: 1rem 0;
   }
@@ -783,16 +834,44 @@ body {
   }
 
   .betting-content-right-first .btn-container button {
-    padding: 0.1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .betting-content-right-first .radio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .betting-content-right-first .radio-container .form-check {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
   }
 
   .betting-content-right-first .radio-container .form-check-input {
-    width: 1.6rem;
-    height: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
   }
 
   .betting-content-right-first .radio-container .form-check-label {
     font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .betting-content-right-first #placeBet {
@@ -803,11 +882,17 @@ body {
   .betting-content-right-first .bet-container input {
     font-size: 1.35rem;
     padding: 0.1rem 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .betting-content-right-first .bet-container button {
     font-size: 1.35rem;
-    padding: 0.1rem 2rem;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .betting-content-right-first .footer-container .form-check-input {
@@ -830,10 +915,14 @@ body {
   }
 
   .betting-content-right-first #betSubmit {
-    padding: 0.1rem 1rem !important;
-    font-size: 1.4rem;
+    padding: 0.5rem 1rem !important;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+
 @media only screen and (max-width: 450px) {
   html {
     font-size: 4px;
@@ -851,17 +940,17 @@ body {
     font-size: 3.5px;
   }
   .betting-content-left .left-search button {
-    height: 3.3rem;
+    padding: 0;
+    height: 3.5rem;
   }
 }
+
 @media only screen and (max-width: 350px) {
   html {
     font-size: 3px;
   }
-  .betting-content-left .left-search button {
-    height: 3.3rem;
-  }
 }
+
 @media only screen and (max-width: 300px) {
   html {
     font-size: 2.5px;

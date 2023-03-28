@@ -1,0 +1,848 @@
+/*----------------------------*/
+/* Google Fonts */
+/*----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+/*----------------------------*/
+/* Basic Setup */
+/*----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #090d28;
+  font-size: 10px;
+}
+
+/*----------------------------------------*/
+/* Live Betting Main Contents Section*/
+/*---------------------------------------*/
+.eSportsBettingContents {
+  width: 100vw;
+}
+
+.main-contents-row {
+  width: 97vw;
+  display: flex;
+  flex-direction: row;
+  margin: 2rem auto;
+  align-items: self-start;
+  justify-content: space-between !important;
+}
+
+.eSports-content-left {
+  width: 10.7vw !important;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.eSports-content-left .left-first-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  width: 100%;
+  height: 70.5rem;
+}
+
+.eSports-content-left .left-first-row .left-first-row-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #404c3d;
+  width: 100%;
+  height: 5.2rem;
+}
+
+.eSports-content-left .left-first-row .left-first-row-head img {
+  width: 2.27rem;
+  height: 2.3rem;
+  margin-right: 0.5rem;
+}
+
+.eSports-content-left .left-first-row .left-first-row-head h2 {
+  font-weight: 900;
+  font-size: 1.35rem;
+  color: #efc02c;
+  margin: 0;
+  padding: 0;
+}
+
+.eSports-content-center {
+  width: 72.44vw;
+}
+
+.eSports-content-center .main-body-menu {
+  width: 100%;
+  height: 6.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+}
+
+.eSports-content-center .main-body-menu button {
+  border: 0;
+  outline: 0;
+}
+
+.eSports-content-center .main-body-menu .main-menu {
+  width: 16.66667vw !important;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #404c3d;
+}
+
+.eSports-content-center .main-body-menu .main-menu button {
+  height: 100%;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #ffffff;
+  background: transparent;
+  padding: 0 2.575rem 0 2.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.eSports-content-center .main-body-menu .main-menu button:hover,
+.eSports-content-center .main-body-menu .main-menu button:focus,
+.eSports-content-center .main-body-menu .main-menu button:active {
+  background: #4e5a4a;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.eSports-content-center .main-body-menu .main-menu img {
+  width: 2.27rem;
+  height: 2.3rem;
+  margin-right: 0.7rem;
+}
+
+.eSports-content-center .main-body-menu .prev-btn,
+.eSports-content-center .main-body-menu .next-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0 1.85rem;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+}
+
+.eSports-content-center .main-body-menu .prev-btn:hover,
+.eSports-content-center .main-body-menu .next-btn:hover,
+.eSports-content-center .main-body-menu .prev-btn:focus,
+.eSports-content-center .main-body-menu .next-btn:focus,
+.eSports-content-center .main-body-menu .prev-btn:active,
+.eSports-content-center .main-body-menu .next-btn:active {
+  background: #d8d8d8;
+  transition: background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  -moz-transition: background 0.2s ease-in;
+  -ms-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+}
+
+.eSports-content-center .main-body-menu .next-btn img {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+.eSports-content-center .main-body-menu .esports-menus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.eSports-content-center .main-body-menu .esports-menus button {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.4rem;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #090d28;
+  background: #fff;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.eSports-content-center .main-body-menu .esports-menus button:hover,
+.eSports-content-center .main-body-menu .esports-menus button:focus,
+.eSports-content-center .main-body-menu .esports-menus button:active {
+  background: #cecece;
+  transition: background 0.3s ease-in;
+  -webkit-transition: background 0.3s ease-in;
+  -moz-transition: background 0.3s ease-in;
+  -ms-transition: background 0.3s ease-in;
+  -o-transition: background 0.3s ease-in;
+}
+
+.eSports-content-center .main-body-menu .esports-menus button img {
+  margin-right: 0.8rem;
+}
+
+.l-logo {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 2px solid #efc02c;
+  color: #efc02c;
+  margin-right: 0.8rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.eSports-content-center .center-second-row,
+.eSports-content-center .center-third-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.eSports-content-center .center-second-row h2,
+.eSports-content-center .center-third-row h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #efc02c;
+  margin: 2.2rem 0;
+}
+
+.eSports-content-center .center-second-row .second-row-body,
+.eSports-content-center .center-third-row .third-row-body {
+  width: 100%;
+  height: 4.95rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+}
+
+.eSports-content-center .center-second-row .second-row-body p,
+.eSports-content-center .center-third-row .third-row-body p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #090d28;
+}
+
+.eSports-content-center .center-second-row .second-row-body .highlighter,
+.eSports-content-center .center-third-row .third-row-body .highlighter {
+  width: 4.41736vw;
+  height: 100%;
+  background: linear-gradient(180deg, #820300 0%, #360100 100%);
+}
+
+.eSports-content-center .center-second-row .second-row-body .first-content,
+.eSports-content-center .center-second-row .second-row-body .second-content,
+.eSports-content-center .center-second-row .second-row-body .third-content,
+.eSports-content-center .center-second-row .second-row-body .fourth-content,
+.eSports-content-center .center-third-row .third-row-body .first-content,
+.eSports-content-center .center-third-row .third-row-body .second-content,
+.eSports-content-center .center-third-row .third-row-body .third-content,
+.eSports-content-center .center-third-row .third-row-body .fourth-content {
+  width: 26.7125vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.eSports-content-center .center-second-row .second-row-body .first-content p,
+.eSports-content-center .center-third-row .third-row-body .first-content p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .first-content
+  p:first-child {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #efc02c;
+  padding: 0.1rem 0.75rem;
+  margin: 0 1.992rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .first-content
+  p:last-child
+  span:first-child,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .first-content
+  p:last-child
+  span:first-child {
+  font-size: 1.275rem;
+  color: #efc02c;
+  font-weight: 600;
+}
+
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .first-content
+  p:last-child
+  span:last-child,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .first-content
+  p:last-child
+  span:last-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.eSports-content-center .center-second-row .second-row-body .second-content,
+.eSports-content-center .center-third-row .third-row-body .second-content {
+  width: 18.75vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .second-content
+  p:last-child,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .second-content
+  p:last-child {
+  font-weight: 600;
+  font-size: 1.35rem;
+  color: #efc02c;
+}
+
+.eSports-content-center .center-second-row .second-row-body .second-content p,
+.eSports-content-center .center-second-row .second-row-body .fourth-content p,
+.eSports-content-center .center-third-row .third-row-body .second-content p,
+.eSports-content-center .center-third-row .third-row-body .fourth-content p {
+  display: flex;
+  flex-direction: row;
+}
+
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .second-content
+  p
+  span,
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .fourth-content
+  p
+  span,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .second-content
+  p
+  span,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .fourth-content
+  p
+  span {
+  margin: 0 2.1rem;
+  width: 1.8rem;
+  height: 1.98rem;
+  display: block;
+}
+
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .second-content
+  p
+  span
+  img,
+.eSports-content-center
+  .center-second-row
+  .second-row-body
+  .fourth-content
+  p
+  span
+  img,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .second-content
+  p
+  span
+  img,
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .fourth-content
+  p
+  span
+  img {
+  width: 1.8rem;
+  height: 1.98rem;
+}
+
+.eSports-content-center .center-second-row .second-row-body .third-content,
+.eSports-content-center .center-third-row .third-row-body .third-content {
+  width: 11.458vw;
+  height: 100%;
+  justify-content: center;
+}
+
+.eSports-content-center .center-second-row .second-row-body .third-content p,
+.eSports-content-center .center-third-row .third-row-body .third-content p {
+  font-size: 1.6rem;
+}
+
+.eSports-content-center .center-second-row .second-row-body .fourth-content,
+.eSports-content-center .center-third-row .third-row-body .fourth-content {
+  width: 11.10214vw;
+  height: 100%;
+}
+
+.eSports-content-center .center-third-row .third-row-body .highlighter-l {
+  background: linear-gradient(180deg, #3889c9 0%, #27608e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .highlighter-l
+  .l-logo {
+  width: 3.4rem;
+  height: 3.4rem;
+  font-size: 1.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .first-content
+  p:first-child {
+  width: 6.1645833vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 1.35rem;
+  color: #090d28;
+}
+
+.eSports-content-center
+  .center-third-row
+  .third-row-body
+  .first-content
+  p:first-child
+  span:last-child {
+  font-size: 1.05rem;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.eSports-content-center .center-third-row .third-row-body .highlighter-c {
+  background: linear-gradient(180deg, #ffa12e 0%, #e17c00 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eSports-content-center .center-third-row .third-row-body .highlighter-c img {
+  width: 1.849rem;
+  height: 2.4rem;
+}
+
+.eSports-content-center .center-third-row .third-row-body {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.active-border {
+  background: #e6e6e6;
+  border-bottom: 0.25rem solid #ffd200 !important;
+}
+
+.eSports-content-right {
+  width: 12.3vw !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.eSports-content-right .right-first-row {
+  width: 100%;
+  height: 9.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #fff;
+}
+
+.eSports-content-right .right-first-row h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 4.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: #434343;
+  padding: 0 0.5rem 0 2rem;
+  position: relative;
+  margin-bottom: 0 !important;
+}
+
+.eSports-content-right .right-first-row h2::before {
+  content: "";
+  height: 1.5rem;
+  position: absolute;
+  left: 1rem;
+  border: 0;
+  border-left: 0.3rem solid #f8d63a;
+}
+
+.eSports-content-right .right-first-row h2 img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.eSports-content-right .right-first-row p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+/*----------------------------*/
+/* Media Queries For Responsiveness*/
+/*----------------------------*/
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 9.5px;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button {
+    padding: 0 1.3rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button img {
+    margin-right: 0.7rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button .l-logo {
+    margin-right: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 9.25px;
+  }
+  .eSports-content-center .main-body-menu .esports-menus button {
+    padding: 0 1rem;
+    font-size: 1.3rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button img {
+    margin-right: 0.5rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button .l-logo {
+    margin-right: 0.5rem;
+  }
+  .eSports-content-center .main-body-menu .main-menu button {
+    padding: 0 2.3rem 0 2rem;
+  }
+
+  .eSports-content-center .main-body-menu .main-menu img {
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 0.5rem;
+  }
+
+  .eSports-content-center .main-body-menu .prev-btn,
+  .eSports-content-center .main-body-menu .next-btn {
+    padding: 0 1.5rem;
+  }
+
+  .eSports-content-center .center-second-row .second-row-body,
+  .eSports-content-center .center-third-row .third-row-body {
+    padding-right: 0.5rem;
+  }
+
+  .eSports-content-center .center-second-row .second-row-body .third-content p,
+  .eSports-content-center .center-third-row .third-row-body .third-content p {
+    font-size: 1.5rem;
+  }
+
+  .eSports-content-center .center-second-row .second-row-body .fourth-content p,
+  .eSports-content-center .center-third-row .third-row-body .fourth-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  html {
+    font-size: 9px;
+  }
+  .eSports-content-center .main-body-menu .esports-menus button {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button img {
+    margin-right: 0.5rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button .l-logo {
+    margin-right: 0.5rem;
+  }
+  .eSports-content-center .main-body-menu .main-menu button {
+    padding: 0 2rem 0 1.75rem;
+  }
+
+  .eSports-content-center .main-body-menu .main-menu img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+  }
+
+  .eSports-content-center .main-body-menu .prev-btn,
+  .eSports-content-center .main-body-menu .next-btn {
+    padding: 0 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  html {
+    font-size: 8.5px;
+  }
+
+  .eSports-content-center .main-body-menu {
+    height: 13.5rem;
+    flex-direction: column;
+  }
+
+  .eSports-content-center .main-body-menu .main-menu {
+    width: 100% !important;
+    height: 6.75rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #404c3d;
+  }
+
+  .eSports-content-center .main-body-menu .main-menu button {
+    height: 100%;
+    padding: 0 5rem 0;
+    font-size: 1.35rem;
+  }
+
+  .eSports-content-center .main-body-menu .main-menu img {
+    width: 2.27rem;
+    height: 2.3rem;
+    margin-right: 0.7rem;
+  }
+
+  .eSports-content-center .main-body-menu .prev-btn,
+  .eSports-content-center .main-body-menu .next-btn {
+    display: none;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus {
+    height: 6.75rem;
+    justify-content: space-between;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button {
+    height: 100%;
+    padding: 0 1.4rem;
+    background: transparent;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button img {
+    margin-right: 0.8rem;
+  }
+
+  .eSports-content-center .main-body-menu .esports-menus button .l-logo {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.6rem;
+    margin-right: 0.8rem;
+  }
+
+  .eSports-content-center .center-second-row .second-row-body .first-content,
+  .eSports-content-center .center-third-row .third-row-body .first-content {
+    width: 22vw;
+  }
+  .eSports-content-center .center-second-row .second-row-body .second-content,
+  .eSports-content-center .center-third-row .third-row-body .second-content {
+    width: 19.75vw;
+  }
+  .eSports-content-center .center-second-row .second-row-body .fourth-content,
+  .eSports-content-center .center-third-row .third-row-body .fourth-content {
+    width: 14.81464vw;
+  }
+  .eSports-content-right .right-first-row p {
+    padding: 0 0 0 1rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+  .eSports-content-left .left-first-row .left-first-row-head img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .eSports-content-left .left-first-row .left-first-row-head h2 {
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 7px;
+  }
+  .eSports-content-center .main-body-menu .esports-menus button img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .eSports-content-center .center-second-row .second-row-body .fourth-content p,
+  .eSports-content-center .center-third-row .third-row-body .fourth-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 4.5px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 3.5px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 2.5px;
+  }
+}

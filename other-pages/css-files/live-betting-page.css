@@ -818,6 +818,13 @@ body {
   .betting-content-center .center-btn-container button {
     font-size: 1.25rem;
     padding: 0 0.5rem;
+    background: #fff !important;
+  }
+
+  .betting-content-center .search-btn-container button {
+    font-size: 1.3rem;
+    padding: 0 1.5rem;
+    background: #fff !important;
   }
   .betting-content-left .left-second-row .content-body,
   .betting-content-left .left-third-row .content-body {
@@ -947,8 +954,5 @@ body {
 @media only screen and (max-width: 300px) {
   html {
     font-size: 2.5px;
-  }
-  .betting-content-left .left-search button {
-    height: 3.3rem;
   }
 }
