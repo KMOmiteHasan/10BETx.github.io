@@ -666,6 +666,9 @@ footer {
   width: 23rem !important;
   height: 19.6rem !important;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-logo {
