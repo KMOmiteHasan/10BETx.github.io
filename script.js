@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset;
     const navHeight = navbar.getBoundingClientRect().height;
 
-    if (scrollHeight > navHeight) {
+    if (scrollHeight > 0) {
         navbar.classList.add("sticky-navbar");
     } else {
         navbar.classList.remove("sticky-navbar");

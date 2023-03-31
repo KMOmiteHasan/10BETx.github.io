@@ -67,6 +67,7 @@ body {
 .navbar {
   background-color: #090d28;
   width: 100vw;
+  height: 11rem;
   display: flex;
   flex-direction: row;
   align-items: start;
@@ -82,13 +83,14 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
+  height: 11rem;
   z-index: 999;
   overflow: hidden;
   animation: slideDown 0.3s linear 1 forwards;
   -webkit-animation: slideDown 0.3s linear 1 forwards;
 }
 
-@keyframes slideDown {
+/* @keyframes slideDown {
   0% {
     height: 0;
   }
@@ -107,7 +109,7 @@ body {
   100% {
     height: 11rem;
   }
-}
+} */
 /*------ Sticky Navbar Finish -------*/
 
 .container-fluid {
@@ -659,6 +661,13 @@ footer {
 .fourth-column {
   align-items: center !important;
 }
+
+.footer-logo-cont {
+  width: 23rem !important;
+  height: 19.6rem !important;
+  text-decoration: none;
+}
+
 .footer-logo {
   width: 23rem !important;
   height: 19.6rem !important;
@@ -1095,6 +1104,7 @@ footer p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 }
 
 .live-contact p {
@@ -1273,6 +1283,7 @@ footer p {
   .show-nav {
     display: flex !important;
     flex-direction: column !important;
+    height: 11rem;
     margin-top: 2rem;
     animation: navOpen 0.3s ease-in 1 forwards !important;
     -webkit-animation: navOpen 0.3s ease-in 1 forwards !important;

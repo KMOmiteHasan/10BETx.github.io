@@ -11,6 +11,12 @@
     <meta name="author" content="K M Omite Hasasn">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Title of The Site -->
+    <title>10BET - Casino</title>
+
+    <!-- Page Icon -->
+    <link rel="shortcut icon" href="resources/images/Logo gold 1.png">
+
     <!-- Normalize CSS File -->
     <link rel="stylesheet" href="vendors/normalize/normalize.css">
 
@@ -18,12 +24,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
+    <!-- Swiper CSS File -->
+    <link rel="stylesheet" type="text/css" href="../../vendors/swiper/swiper.min.css">
+
+
     <!-- Main CSS File of the site -->
     <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="../css-files/slot-page.css">
 
-    <!-- Title of The Site -->
-    <title>10BET - Casino</title>
 
 </head>
 
@@ -144,657 +152,897 @@
     <!--=== Slot Main Content Section ===-->
     <section class="slotContent">
 
-        <div class="main-image">
-            <img src="../../resources/live-casino-page-img/div (1).png" alt="Bet Main Image">
-        </div>
-
         <div class="slot-main-bet-contents">
 
-            <div class="buttonHolder">
+            <div class="main-content-left">
 
-                <div class="buttonHolder-search">
-                    <div class="left-search">
+                <div class="buttonHolder">
+
+                    <div class="buttonHolder-search">
                         <input class="form-control" type="search" placeholder="Oyunu Axtar..." aria-label="Search">
                         <button type="submit">
                             <img src="../../resources/sports-page-img/serach-icon.png" alt="Search Icon">
                         </button>
                     </div>
-                    <button type="button">Filterlər</button>
-                </div>
 
-                <div class="buttonHolder-filter">
-                    <ul class="nav-pills">
-                        <li class="filter-item active">
-                            <div class="vector-block">
-                                <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
-                                <span>5520</span>
-                            </div>
-                            <a class="filter-link" href="#">Bütün Oyunlar</a>
-                        </li>
-                        <li class="filter-item">
-                            <div class="vector-block">
-                                <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
-                                <span>0</span>
-                            </div>
-                            <a class="filter-link" href="#">Favoritlərim</a>
-                        </li>
-                        <li class="filter-item">
-                            <div class="vector-block">
-                                <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
-                                <span>129</span>
-                            </div>
-                            <a class="filter-link" href="#">Masa Oyunları</a>
-                        </li>
-                        <li class="filter-item">
-                            <div class="vector-block">
-                                <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
-                                <span>5598</span>
-                            </div>
-                            <a class="filter-link" href="#">VIDEO SLOT OYUNLARI</a>
-                        </li>
-                        <li class="filter-item">
-                            <div class="vector-block">
-                                <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
-                                <span>668</span>
-                            </div>
-                            <a class="filter-link" href="#">Yeni</a>
-                        </li>
-                        <li class="filter-item">
-                            <div class="vector-block">
-                                <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
-                                <span>1120</span>
-                            </div>
-                            <a class="filter-link" href="#">Populyar Slot</a>
-                        </li>
-                    </ul>
+                    <div class="buttonHolder-filter">
+                        <h2>Categories</h2>
+                        <ul class="nav-pills">
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>5520</span>
+                                </div>
+                                <a class="filter-link" href="#">Bütün Oyunlar</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>0</span>
+                                </div>
+                                <a class="filter-link" href="#">Favoritlərim</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>129</span>
+                                </div>
+                                <a class="filter-link" href="#">Masa Oyunları</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>5598</span>
+                                </div>
+                                <a class="filter-link" href="#">VIDEO SLOT OYUNLARI</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>668</span>
+                                </div>
+                                <a class="filter-link" href="#">Yeni</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>1120</span>
+                                </div>
+                                <a class="filter-link" href="#">Populyar Slot</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>1120</span>
+                                </div>
+                                <a class="filter-link" href="#">KLASİK SLOT OYUNLARI</a>
+                            </li>
+                            <li class="filter-item">
+                                <div class="vector-block">
+                                    <img src="../../resources/live-casino-page-img/new_releases.png" alt="Vector">
+                                    <span>1120</span>
+                                </div>
+                                <a class="filter-link" href="#">MEGAWAYS</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="mainContent-button-holder">
-                <button class="active body-filter-btn" type="button">Qeydiyyatdan Keç</button>
-                <button class="body-filter-btn" type="button">İstidadəçi Adı</button>
-                <button class="body-filter-btn" type="button">Şifrə</button>
-                <button class="body-filter-btn" type="button">Daxil ol</button>
-            </div>
+            <div class="main-content-right">
 
-            <div class="mainContent-holder">
+                <div class="main-image">
+                    <img src="../../resources/live-casino-page-img/div (1).png" alt="Bet Main Image">
+                </div>
 
-                <div class="bet-first-column">
+                <div class="mainContent-button-holder">
+                    <button class="active body-filter-btn" type="button">Qeydiyyatdan Keç</button>
+                    <button class="body-filter-btn" type="button">İstidadəçi Adı</button>
+                    <button class="body-filter-btn" type="button">Şifrə</button>
+                    <button class="body-filter-btn" type="button">Daxil ol</button>
+                </div>
 
-                    <div class="column-heading">
-                        <h1>Masa Oyunları</h1>
+                <div class="mainContent-holder">
+
+                    <div class="bet-first-column">
+
+                        <div class="column-heading">
+                            <h1>Masa Oyunları</h1>
+                        </div>
+
+                        <div class="first-column">
+
+                            <div class="swiper mySwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (1).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (2).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (3).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (4).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (5).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (6).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (7).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (8).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (9).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (10).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="first-column">
+                    <div class="bet-second-column">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (1).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                        <div class="column-heading">
+                            <h1>VIDEO SLOT OYUNLARI</h1>
+                        </div>
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (2).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                        <div class="first-column">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (3).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                            <div class="swiper mySwiper">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (4).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                                <div class="swiper-wrapper">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (5).png"
-                                        class="box-img-top" alt="Bet Content Image">
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (11).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (12).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (13).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (14).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (15).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (16).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (17).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (18).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (19).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (20).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
+
+                                <div class="swiper-pagination"></div>
+
                             </div>
-                        </a>
+
+                        </div>
+
 
                     </div>
 
-                    <div class="second-column">
+                    <div class="bet-third-column">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (6).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                        <div class="column-heading">
+                            <h1>Yeni</h1>
+                        </div>
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (7).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                        <div class="first-column">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (8).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                            <div class="swiper mySwiper">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (9).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
+                                <div class="swiper-wrapper">
 
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (10).png"
-                                        class="box-img-top" alt="Bet Content Image">
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (21).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (22).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (23).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (24).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (25).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (26).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (27).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (28).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (29).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (30).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
                                 </div>
+
+                                <div class="swiper-pagination"></div>
+
                             </div>
-                        </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bet-fourth-column">
+
+                        <div class="column-heading">
+                            <h1>Populyar Slot</h1>
+                        </div>
+
+                        <div class="first-column">
+
+                            <div class="swiper mySwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (31).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (32).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (33).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (34).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (35).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (36).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (37).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (38).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (39).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (40).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="bet-fifth-column">
+
+                        <div class="column-heading">
+                            <h1>KLASİK SLOT OYUNLARI</h1>
+                        </div>
+
+                        <div class="first-column">
+
+                            <div class="swiper mySwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (41).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (42).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (43).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (44).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (45).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (46).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (47).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (48).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (49).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (50).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="bet-sixth-column">
+
+                        <div class="column-heading">
+                            <h1>MEGAWAYS</h1>
+                        </div>
+
+                        <div class="first-column">
+
+                            <div class="swiper mySwiper">
+
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (51).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (52).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (53).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (54).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (55).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (56).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (57).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (58).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (59).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <a class="box-link">
+                                            <div class="box">
+                                                <div class="box-image-container"><img
+                                                        src="../../resources/slot-page-img/div (60).png"
+                                                        class="box-img-top" alt="Bet Content Image">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+
+                            </div>
+
+                        </div>
+
 
                     </div>
 
                 </div>
 
-                <div class="bet-second-column">
-
-                    <div class="column-heading">
-                        <h1>VIDEO SLOT OYUNLARI</h1>
-                    </div>
-
-                    <div class="first-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (11).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (12).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (13).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (14).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (15).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="second-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (16).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (17).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (18).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (19).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (20).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="bet-third-column">
-
-                    <div class="column-heading">
-                        <h1>Yeni</h1>
-                    </div>
-
-                    <div class="first-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (21).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (22).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (23).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (24).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (25).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="second-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (26).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (27).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (28).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (29).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (30).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="bet-fourth-column">
-
-                    <div class="column-heading">
-                        <h1>Populyar Slot</h1>
-                    </div>
-
-                    <div class="first-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (31).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (32).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (33).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (34).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (35).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="second-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (36).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (37).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (38).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (39).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (40).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="bet-fifth-column">
-
-                    <div class="column-heading">
-                        <h1>KLASİK SLOT OYUNLARI</h1>
-                    </div>
-
-                    <div class="first-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (41).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (42).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (43).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (44).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (45).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="second-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (46).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (47).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (48).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (49).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (50).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="bet-sixth-column">
-
-                    <div class="column-heading">
-                        <h1>MEGAWAYS</h1>
-                    </div>
-
-                    <div class="first-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (51).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (52).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (53).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (54).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (55).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                    <div class="second-column">
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (56).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (57).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (58).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (59).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="box-link">
-                            <div class="box">
-                                <div class="box-image-container"><img src="../../resources/slot-page-img/div (60).png"
-                                        class="box-img-top" alt="Bet Content Image">
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
 
             </div>
 
@@ -812,11 +1060,31 @@
             <div class="first-column">
                 <h1>Support Contacts</h1>
                 <ul>
-                    <li><a href="#">Technical support support<span>@firstbet10.com</span></a></li>
-                    <li><a href="#">Security service support<span>@firstbet10.com</span></a></li>
-                    <li><a href="#">Payments questions support<span>@firstbet10.com</span></a></li>
-                    <li><a href="#">Commercial offers support<span>@firstbet10.com</span></a></li>
-                    <li><a href="#">Affiliate program support<span>@firstbet10.com</span></a></li>
+                    <li><a href="https://mail.google.com/" target="_blank">
+                            Technical support
+                            support<span>@firstbet10.com</span>
+                        </a>
+                    </li>
+                    <li><a href="https://mail.google.com/" target="_blank">
+                            Security service
+                            support<span>@firstbet10.com</span>
+                        </a>
+                    </li>
+                    <li><a href="https://mail.google.com/" target="_blank">
+                            Payments questions
+                            support<span>@firstbet10.com</span>
+                        </a>
+                    </li>
+                    <li><a href="https://mail.google.com/" target="_blank">
+                            Commercial offers
+                            support<span>@firstbet10.com</span>
+                        </a>
+                    </li>
+                    <li><a href="https://mail.google.com/" target="_blank">
+                            Affiliate program
+                            support<span>@firstbet10.com</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -824,40 +1092,64 @@
                 <h1>Information</h1>
                 <ul>
                     <li><a href="../../other-pages/html-files/rules-page.html" target="_blank">Rules</a></li>
-                    <li><a href="#">Bonuses and promotions</a></li>
+                    <li><a href="../../other-pages/html-files/promo-page.html">Bonuses and promotions</a></li>
                     <li><a href="#">Mobile Version</a></li>
                     <li><a href="#">Affiliate program</a></li>
-                    <li><a href="#">Risk disclosure</a></li>
+                    <li><a href="../../other-pages/html-files/rules-page.html" target="_blank">Risk disclosure</a></li>
                 </ul>
             </div>
 
             <div class="third-column">
                 <h1>Categories</h1>
                 <ul>
-                    <li><a href="#">Live</a></li>
-                    <li><a href="#">Sports</a></li>
-                    <li><a href="#">Casino</a></li>
-                    <li><a href="#">Live Casino</a></li>
-                    <li><a href="#">Bonus shop</a></li>
-                    <li><a href="#">More</a></li>
+                    <li><a href="../html-files/live-betting-page.html">Live</a></li>
+                    <li><a href="../html-files/sports-page.html">Sports</a></li>
+                    <li><a href="slot-page.html">Casino</a></li>
+                    <li><a href="../html-files/live-casino-page.html">Live Casino</a></li>
+                    <li><a href="../html-files/other-home.html">Bonus shop</a></li>
+                    <li><a href="../html-files/jetx-page.html">More</a></li>
                 </ul>
             </div>
 
             <div class="fourth-column">
-                <img class="footer-logo" src="../../resources/images/Logo gold 1.png" alt="Logo">
+                <a class="footer-logo-cont" href="../../index.html">
+                    <img class="footer-logo" src="../../resources/images/Logo gold 1.png" alt="Logo">
+                </a>
                 <ul>
-                    <li><a href="#"><img src="../../resources/images/whatsapp-icon.png" alt="WhatsApp Icon"></a></li>
-                    <li><a href="#"><img src="../../resources/images/fb-icon.png" alt="Facebook Icon"></a></li>
-                    <li><a href="#"><img src="../../resources/images/insta-icon.png" alt="Instagram Icon"></a></li>
-                    <li><a href="#"><img src="../../resources/images/telegram-icon.png" alt="Telegram Icon"></a></li>
-                    <li><a href="#"><img src="../../resources/images/tiktok-icon.png" alt="TikTok Icon"></a></li>
-                    <li><a href="#"><img src="../../resources/images/youtube-icon.png" alt="YouTube Icon"></a></li>
+                    <li>
+                        <a href="https://wa.me/380964392421" target="_blank">
+                            <img src="../../resources/images/whatsapp-icon.png" alt="WhatsApp Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/1stbet10/" target="_blank">
+                            <img src="../../resources/images/fb-icon.png" alt="Facebook Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../resources/images/insta-icon.png" alt="Instagram Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/ffirstbet10" target="_blank">
+                            <img src="../../resources/images/telegram-icon.png" alt="Telegram Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@firstbet10?_t=8b3ZeXTHW7d&_r=1" target="_blank">
+                            <img src="../../resources/images/tiktok-icon.png" alt="TikTok Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCGF-h5IHZB0E_KJitTdBeIg" target="_blank">
+                            <img src="../../resources/images/youtube-icon.png" alt="YouTube Icon">
+                        </a>
+                    </li>
                 </ul>
                 <ul class="fourth-column-lg-icons">
-                    <li><a href="#"><img src="../../resources/images/app-store-icon.png" alt="Apple App Store Icon"></a>
-                    </li>
-                    <li><a href="#"><img src="../../resources/images/google-play-icon.png"
-                                alt="Google Play Store Icon"></a>
+                    <li><a href="#"><img src="resources/images/app-store-icon.png" alt="Apple App Store Icon"></a></li>
+                    <li><a href="#"><img src="resources/images/google-play-icon.png" alt="Google Play Store Icon"></a>
                     </li>
                 </ul>
             </div>
@@ -1313,6 +1605,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <!-- LightSlider JS File -->
+    <script type="text/javascript" src="../../vendors/swiper/swiper.min.js"></script>
 
     <!--=== Main Javascript File ===-->
     <script type="text/javascript" src="../../script.js"></script>
