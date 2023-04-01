@@ -34,33 +34,29 @@ body {
 }
 
 .promo-main-bet-contents {
-  width: 86.25vw;
+  width: 83.3333vw;
   display: flex;
   flex-direction: column;
-  margin: 4.5rem auto;
+  margin: 4rem auto;
 }
 
-.first-column,
-.second-column {
+.promo-main-bet-contents .first-column,
+.promo-main-bet-contents .second-column,
+.promo-main-bet-contents .third-column {
+  width: 100%;
+  height: 18.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  margin: 0 0 4rem 0;
 }
 
-.first-column {
-  margin-bottom: 2.2rem;
-}
-
-.card {
-  width: 27.8vw;
-  height: 46rem;
-  cursor: pointer;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  border: 0.2rem solid #fff;
+.promo-main-bet-contents .first-column .promo-box,
+.promo-main-bet-contents .second-column .promo-box,
+.promo-main-bet-contents .third-column .promo-box {
+  width: 38.1944vw;
+  height: 18.5rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -68,178 +64,60 @@ body {
   -o-border-radius: 1rem;
 }
 
-.card-img-top {
-  width: 100%;
-  height: 16rem !important;
-  transform: scale(1.02);
-  -webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  transition: transform 0.25s ease-in;
-  -webkit-transition: transform 0.25s ease-in;
-  -moz-transition: transform 0.25s ease-in;
-  -ms-transition: transform 0.25s ease-in;
-  -o-transition: transform 0.25s ease-in;
+.promo-main-bet-contents .first-column .promo-box a,
+.promo-main-bet-contents .second-column .promo-box a,
+.promo-main-bet-contents .third-column .promo-box a {
+  text-decoration: none;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  width: 38.1944vw;
+  height: 18.5rem;
+  display: block;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-.card:hover .card-img-top,
-.card:focus .card-img-top {
-  transform: scale(1.06);
-  -webkit-transform: scale(1.06);
-  -moz-transform: scale(1.06);
-  -ms-transform: scale(1.06);
-  -o-transform: scale(1.06);
-  transition: transform 0.25s ease-in;
-  -webkit-transition: transform 0.25s ease-in;
-  -moz-transition: transform 0.25s ease-in;
-  -ms-transition: transform 0.25s ease-in;
-  -o-transition: transform 0.25s ease-in;
+.promo-main-bet-contents .first-column .promo-box a:hover,
+.promo-main-bet-contents .second-column .promo-box a:hover,
+.promo-main-bet-contents .third-column .promo-box a:hover,
+.promo-main-bet-contents .first-column .promo-box a:focus,
+.promo-main-bet-contents .second-column .promo-box a:focus,
+.promo-main-bet-contents .third-column .promo-box a:focus {
+  box-shadow: 0 0.1rem 2.4rem #222;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
 }
 
-.card-body {
-  background-color: #272735;
-  width: 100%;
-  height: 30rem;
-  padding: 2.7rem 2.8rem 3.75rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.card-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.53125rem;
-  color: #ffffff;
-  margin-bottom: 3rem;
-}
-
-.card-text {
-  font-weight: 400;
-  font-size: 1.46667rem;
-  color: #c7c7c7;
-}
-
-.card-btn-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+.promo-main-bet-contents .first-column .promo-box a img,
+.promo-main-bet-contents .second-column .promo-box a img,
+.promo-main-bet-contents .third-column .promo-box a img {
   width: 100%;
   height: 100%;
+  transform: scale(1.015, 1.03);
+  -webkit-transform: scale(1.015, 1.03);
+  -moz-transform: scale(1.015, 1.03);
+  -ms-transform: scale(1.015, 1.03);
+  -o-transform: scale(1.015, 1.03);
 }
 
-.card-btn-container .sub-btn {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #ffffff;
-  text-decoration: none;
-  height: 2.8rem;
-  border-bottom: 0.2rem solid #fff212;
-  padding: 0 0.8rem;
-  margin-bottom: 0.8rem;
-  background: transparent;
-  transition: background 0.3s ease;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.card-btn-container .sub-btn:hover,
-.card-btn-container .sub-btn:focus {
-  background: #0f0f14;
-  transition: background 0.3s ease;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-}
-
-.card-btn-container .main-btn {
-  width: 15.7rem;
-  height: 4.7rem;
-  font-weight: 500;
-  font-size: 2.0625rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: #000000;
-  background: #fff212;
-  transition: background 0.3s ease;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-}
-
-.card-btn-container .main-btn:hover,
-.card-btn-container .main-btn:focus {
-  background: #aaa20d;
-  transition: background 0.3s ease;
-  -webkit-transition: background 0.3s ease;
-  -moz-transition: background 0.3s ease;
-  -ms-transition: background 0.3s ease;
-  -o-transition: background 0.3s ease;
+.promo-main-bet-contents .third-column {
+  justify-content: flex-end;
 }
 
 /*----------------------------*/
 /* Media Queries For Responsiveness*/
 /*----------------------------*/
-@media only screen and (max-width: 1250px) {
-  .card-body {
-    height: 30rem;
-    padding: 2.7rem 2.2rem 3.75rem;
-  }
-
-  .card-title {
-    font-size: 2.2rem;
-  }
-
-  .card-text {
-    font-size: 1.4rem;
-  }
-
-  .card-btn-container .sub-btn {
-    font-size: 1.4rem;
-    height: 2.8rem;
-    padding: 0 0.6rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .card-btn-container .main-btn {
-    width: 14rem;
-    font-size: 2rem;
-  }
-}
-
 @media only screen and (max-width: 1080px) {
   html,
   body {
     font-size: 9.5px;
-  }
-
-  .card-title {
-    font-size: 2.1rem;
-  }
-
-  .card-btn-container .main-btn {
-    font-size: 1.9rem;
   }
 }
 
@@ -247,28 +125,6 @@ body {
   html,
   body {
     font-size: 9px;
-  }
-  .card-body {
-    height: 30rem;
-    padding: 2.7rem 2rem 3.75rem;
-  }
-
-  .card-title {
-    font-size: 2rem;
-  }
-
-  .card-text {
-    font-size: 1.35rem;
-  }
-
-  .card-btn-container .sub-btn {
-    font-size: 1.35rem;
-    padding: 0 0.5rem;
-  }
-
-  .card-btn-container .main-btn {
-    width: 13rem;
-    font-size: 1.85rem;
   }
 }
 
@@ -283,28 +139,6 @@ body {
   html,
   body {
     font-size: 7.5px;
-  }
-  .card-body {
-    height: 30rem;
-    padding: 2.5rem 1.8rem 3.4rem;
-  }
-
-  .card-title {
-    font-size: 1.9rem;
-  }
-
-  .card-text {
-    font-size: 1.3rem;
-  }
-
-  .card-btn-container .sub-btn {
-    font-size: 1.3rem;
-    padding: 0 0.5rem;
-  }
-
-  .card-btn-container .main-btn {
-    width: 12rem;
-    font-size: 1.7rem;
   }
 }
 
@@ -327,10 +161,6 @@ body {
   body {
     font-size: 6px;
   }
-  .card-body {
-    height: 25rem;
-    padding: 2.2rem 1.8rem 3rem;
-  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -344,27 +174,6 @@ body {
   html,
   body {
     font-size: 5px;
-  }
-  .card-body {
-    height: 20rem;
-    padding: 2.2rem 1.8rem 3rem;
-  }
-  .card-title {
-    font-size: 1.8rem;
-  }
-
-  .card-text {
-    font-size: 1.25rem;
-  }
-
-  .card-btn-container .sub-btn {
-    font-size: 1.25rem;
-    padding: 0 0.5rem;
-  }
-
-  .card-btn-container .main-btn {
-    width: 11.5rem;
-    font-size: 1.6rem;
   }
 }
 
@@ -387,24 +196,6 @@ body {
   body {
     font-size: 3.5px;
   }
-
-  .card-title {
-    font-size: 1.75rem;
-  }
-
-  .card-text {
-    font-size: 1.2rem;
-  }
-
-  .card-btn-container .sub-btn {
-    font-size: 1.2rem;
-    padding: 0 0.5rem;
-  }
-
-  .card-btn-container .main-btn {
-    width: 11rem;
-    font-size: 1.5rem;
-  }
 }
 
 @media only screen and (max-width: 301px) {
@@ -412,48 +203,11 @@ body {
   body {
     font-size: 3px;
   }
-  .card-title {
-    font-size: 1.7rem;
-  }
-
-  .card-text {
-    font-size: 1.175rem;
-  }
-
-  .card-btn-container .sub-btn {
-    font-size: 1.175rem;
-    padding: 0 0.5rem;
-  }
-
-  .card-btn-container .main-btn {
-    width: 10.5rem;
-    font-size: 1.45rem;
-  }
 }
 
 @media only screen and (max-width: 250px) {
   html,
   body {
     font-size: 2.5px;
-  }
-  .live-main-bet-contents {
-    width: 96vw;
-  }
-  .buttonHolder-search .left-search input {
-    font-size: 1.1rem;
-    padding: 0.5rem 0.8rem;
-  }
-  .buttonHolder-search .left-search button {
-    height: 2.7rem;
-  }
-  .buttonHolder-search button[type="button"] {
-    font-size: 1.1rem;
-    padding: 0.7rem 0.8rem;
-  }
-  .buttonHolder-filter .nav-pills img {
-    width: 1.4rem;
-  }
-  .buttonHolder-filter .nav-pills .filter-link {
-    font-size: 1.1rem;
   }
 }
