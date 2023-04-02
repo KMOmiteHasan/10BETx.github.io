@@ -330,6 +330,14 @@ body {
   height: 32.3rem !important;
 }
 
+.main-contents-row .first-column .carousel-inner .bor-rem img {
+  transform: scale(1.015, 1.035);
+  -webkit-transform: scale(1.015, 1.035);
+  -moz-transform: scale(1.015, 1.035);
+  -ms-transform: scale(1.015, 1.035);
+  -o-transform: scale(1.015, 1.035);
+}
+
 .main-contents-row .first-column .carousel-inner {
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -572,7 +580,7 @@ footer {
 }
 
 .footer-row {
-  width: 120rem;
+  width: 95vw;
   height: 35rem;
   margin: auto;
   display: flex;
@@ -602,6 +610,19 @@ footer {
   height: 100%;
 }
 
+.footer-row .first-column {
+  width: 30vw;
+}
+
+.footer-row .second-column,
+.footer-row .third-column {
+  width: 19.5vw;
+}
+
+.footer-row .fourth-column {
+  width: 26vw;
+}
+
 .footer-row .first-column ul,
 .footer-row .second-column ul,
 .footer-row .third-column ul,
@@ -611,8 +632,24 @@ footer {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 100%;
+  width: 100%;
+}
+
+.footer-row .first-column ul {
+  padding: 0 7.5rem 0 0;
+}
+
+.footer-row .fourth-column ul {
+  justify-content: space-around;
+}
+
+.footer-row .first-column ul li,
+.footer-row .second-column ul li,
+.footer-row .third-column ul li,
+.footer-row .fourth-column ul li {
+  margin-bottom: 2rem;
 }
 
 .footer-row .first-column ul li a,
@@ -651,11 +688,9 @@ footer {
 
 .first-column ul li a {
   display: flex;
-  flex-direction: column;
-}
-
-.second-column ul {
-  height: 70% !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .fourth-column {
@@ -663,18 +698,18 @@ footer {
 }
 
 .footer-logo-cont {
-  width: 23rem !important;
-  height: 19.6rem !important;
+  width: 20rem !important;
+  height: 17rem !important;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .footer-logo {
-  width: 23rem !important;
-  height: 19.6rem !important;
-  margin-bottom: 2rem;
+  width: 20rem !important;
+  height: 17rem !important;
   cursor: pointer;
 }
 
@@ -700,7 +735,7 @@ footer {
 }
 
 .horizontal-line {
-  width: 114rem;
+  width: 90vw;
   margin: auto;
   border-top: 2px solid white;
 }
@@ -1197,14 +1232,29 @@ footer p {
   }
 
   .footer-row {
-    width: 90rem;
-    height: 35rem;
-    padding: 3rem 0 2rem;
+    width: 96vw;
+  }
+
+  .footer-row .first-column {
+    width: 34vw;
+  }
+
+  .footer-row .second-column,
+  .footer-row .third-column {
+    width: 18.5vw;
+  }
+
+  .footer-row .fourth-column {
+    width: 24vw;
+  }
+
+  .footer-row .first-column ul {
+    padding: 0 7rem 0 0;
   }
 
   .footer-logo {
-    width: 20rem !important;
-    height: 17rem !important;
+    width: 19rem !important;
+    height: 16.5rem !important;
   }
 
   .fourth-column ul li img {
@@ -1218,7 +1268,7 @@ footer p {
   }
 
   .horizontal-line {
-    width: 92rem;
+    width: 90vw;
   }
 
   footer p {
@@ -1231,31 +1281,6 @@ footer p {
   body {
     background-color: #090d28;
     font-size: 9px;
-  }
-
-  .footer-row {
-    width: 90rem;
-    height: 35rem;
-    padding: 3rem 0 2rem;
-  }
-
-  .footer-logo {
-    width: 20rem !important;
-    height: 17rem !important;
-  }
-
-  .fourth-column ul li img {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .fourth-column-lg-icons li img {
-    width: 8rem !important;
-    height: 3rem;
-  }
-
-  .horizontal-line {
-    width: 92rem;
   }
 
   footer p {
@@ -1340,35 +1365,6 @@ footer p {
     background-color: #090d28;
     font-size: 7.5px;
   }
-
-  .footer-row {
-    width: 90rem;
-    height: 35rem;
-    padding: 3rem 0 2rem;
-  }
-
-  .footer-logo {
-    width: 20rem !important;
-    height: 17rem !important;
-  }
-
-  .fourth-column ul li img {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .fourth-column-lg-icons li img {
-    width: 8rem !important;
-    height: 3rem;
-  }
-
-  .horizontal-line {
-    width: 92rem;
-  }
-
-  footer p {
-    width: 60rem;
-  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -1376,35 +1372,6 @@ footer p {
   body {
     background-color: #090d28;
     font-size: 7.2px;
-  }
-
-  .footer-row {
-    width: 84rem;
-    height: 35rem;
-    padding: 3rem 0 2rem;
-  }
-
-  .footer-logo {
-    width: 20rem !important;
-    height: 17rem !important;
-  }
-
-  .fourth-column ul li img {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .fourth-column-lg-icons li img {
-    width: 8rem !important;
-    height: 3rem;
-  }
-
-  .horizontal-line {
-    width: 80rem;
-  }
-
-  footer p {
-    width: 54rem;
   }
 }
 
@@ -1433,44 +1400,21 @@ footer p {
     justify-content: center;
   }
 
-  .footer-row {
-    width: 90rem;
-  }
-
   .footer-row h1 {
     font-size: 2rem;
   }
 
-  .footer-row .first-column,
-  .footer-row .second-column,
-  .footer-row .third-column,
-  .footer-row .fourth-column {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    height: 100%;
+  .footer-row .first-column ul {
+    padding: 0 5.5rem 0 0;
   }
 
-  .footer-row .first-column ul,
-  .footer-row .second-column ul,
-  .footer-row .third-column ul,
-  .footer-row .fourth-column ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  .footer-row .first-column ul li span {
+    font-size: 1.2rem;
   }
 
-  .fourth-column {
-    align-items: center !important;
-  }
   .footer-logo {
-    width: 18rem !important;
-    height: 16rem !important;
+    width: 16rem !important;
+    height: 14rem !important;
   }
 
   .fourth-column ul li img {
@@ -1486,14 +1430,6 @@ footer p {
     -moz-border-radius: 0.5rem;
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
-  }
-
-  .horizontal-line {
-    width: 80rem;
-  }
-
-  footer p {
-    width: 60rem;
   }
 
   .modal-dialog {
@@ -1534,6 +1470,58 @@ footer p {
     background-color: #090d28;
     font-size: 7px;
   }
+
+  .footer-row .first-column {
+    width: 36vw;
+  }
+
+  .footer-row .second-column,
+  .footer-row .third-column {
+    width: 18.5vw;
+  }
+
+  .footer-row .fourth-column {
+    width: 22vw;
+  }
+
+  .footer-row h1 {
+    font-size: 2rem;
+  }
+
+  .footer-row .first-column ul {
+    padding: 0 5rem 0 0;
+  }
+
+  .footer-row .first-column ul li a,
+  .footer-row .second-column ul li a,
+  .footer-row .third-column ul li a,
+  .footer-row .fourth-column ul li a {
+    font-size: 1.3rem;
+  }
+
+  .footer-row .first-column ul li span {
+    font-size: 1.1rem;
+  }
+
+  .footer-logo {
+    width: 15rem !important;
+    height: 12.8rem !important;
+  }
+
+  .fourth-column ul li img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .fourth-column-lg-icons li img {
+    width: 6.5rem !important;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1542,6 +1530,24 @@ footer p {
     background-color: #090d28;
     font-size: 6px;
   }
+
+  .footer-row .first-column {
+    width: 35vw;
+  }
+
+  .footer-row .second-column,
+  .footer-row .third-column {
+    width: 19vw;
+  }
+
+  .footer-row .fourth-column {
+    width: 23vw;
+  }
+
+  .footer-row .first-column ul li span {
+    font-size: 1rem;
+  }
+
   .modal-dialog {
     max-width: 70vw !important;
     margin: 0 auto !important;
@@ -1656,40 +1662,10 @@ footer p {
     font-size: 5px;
   }
 
-  .footer-row {
-    width: 86rem;
-    height: 50rem;
-  }
-
-  .footer-row h1 {
-    font-size: 2rem;
-  }
-
-  .footer-row .first-column ul li a,
-  .footer-row .second-column ul li a,
-  .footer-row .third-column ul li a,
-  .footer-row .fourth-column ul li a {
-    font-size: 1.2rem;
-  }
-
   .footer-logo {
     width: 12rem !important;
     height: 9rem !important;
     margin-bottom: 2.5rem;
-  }
-
-  .fourth-column {
-    height: 45% !important;
-  }
-
-  .fourth-column ul li img {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  .fourth-column-lg-icons li img {
-    width: 9rem !important;
-    height: 3rem;
   }
 }
 
@@ -1792,9 +1768,6 @@ footer p {
 }
 
 @media only screen and (max-width: 250px) {
-  .footer-row {
-    width: 67rem;
-  }
   .footer-row h1 {
     font-size: 1.6rem;
   }
@@ -1804,5 +1777,9 @@ footer p {
   .footer-row .third-column ul li a,
   .footer-row .fourth-column ul li a {
     font-size: 1rem;
+  }
+
+  .footer-row .first-column ul li a span {
+    font-size: 0.9rem;
   }
 }
