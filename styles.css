@@ -328,6 +328,7 @@ body {
 .main-contents-row .first-column .carousel-inner img {
   width: 57vw !important;
   height: 32.3rem !important;
+  cursor: pointer;
 }
 
 .main-contents-row .first-column .carousel-inner .bor-rem img {

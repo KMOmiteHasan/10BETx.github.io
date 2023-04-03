@@ -213,45 +213,24 @@ body {
   width: 56.5vw;
 }
 
-.betting-content-center #main-img {
-  width: 100%;
+.betting-content-center .carousel,
+.betting-content-center .carousel-inner,
+.betting-content-center .carousel-inner .carousel-item,
+.betting-content-center .carousel-inner img {
+  width: 100% !important;
+  height: 21rem !important;
   cursor: pointer;
-  overflow: hidden;
-  display: block;
-  border: 2px solid #fff;
+}
+.betting-content-center .carousel {
+  margin-bottom: 2rem;
+}
+
+.betting-content-center .carousel-inner {
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  margin-bottom: 3rem;
-}
-.betting-content-center #main-img img {
-  width: 100%;
-  transform: scale(1.018);
-  -webkit-transform: scale(1.018);
-  -moz-transform: scale(1.018);
-  -ms-transform: scale(1.018);
-  -o-transform: scale(1.018);
-  transition: transform 0.3s ease-in;
-  -webkit-transition: transform 0.3s ease-in;
-  -moz-transition: transform 0.3s ease-in;
-  -ms-transition: transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in;
-}
-
-.betting-content-center #main-img img:hover,
-.betting-content-center #main-img img:focus {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transition: transform 0.3s ease-in;
-  -webkit-transition: transform 0.3s ease-in;
-  -moz-transition: transform 0.3s ease-in;
-  -ms-transition: transform 0.3s ease-in;
-  -o-transition: transform 0.3s ease-in;
 }
 
 .betting-content-center .center-btn-container {
