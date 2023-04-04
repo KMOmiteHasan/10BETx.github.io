@@ -26,11 +26,10 @@ body {
 }
 
 /*----------------------------*/
-/* Live Casino Content Section*/
+/* Promo Casino Content Section*/
 /*----------------------------*/
 .promoContent {
   width: 100vw;
-  overflow: hidden;
 }
 
 .promo-main-bet-contents {
@@ -105,10 +104,6 @@ body {
   -moz-transform: scale(1.015, 1.03);
   -ms-transform: scale(1.015, 1.03);
   -o-transform: scale(1.015, 1.03);
-}
-
-.promo-main-bet-contents .third-column {
-  justify-content: flex-end;
 }
 
 /*----------------------------*/

@@ -32,552 +32,73 @@ body {
 }
 
 .main-contents-row {
-  width: 97vw;
-  display: flex;
-  flex-direction: row;
-  margin: 2rem auto;
-  align-items: self-start;
-  justify-content: space-between !important;
-}
-
-.betting-content-left {
-  width: 16vw !important;
-  padding: 0 1rem 2rem;
-  background-color: transparent;
+  width: 83.3333vw;
+  height: 50rem;
   display: flex;
   flex-direction: column;
-}
-
-.betting-content-left .left-first-row {
-  width: 100%;
-  height: 13rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 4rem auto;
   justify-content: flex-start;
-  margin-bottom: 1rem;
 }
 
-.betting-content-left .left-first-row h2,
-.betting-content-left .left-third-row h2,
-.betting-content-left .left-fourth-row h2 {
+.main-contents-row .first-column,
+.main-contents-row .second-column {
   width: 100%;
-  height: 3.7rem;
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #ffffff;
-  background: #434343;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  position: relative;
-  margin-bottom: 0 !important;
-}
-
-.betting-content-left .left-first-row h2::before,
-.betting-content-left .left-third-row h2::before,
-.betting-content-left .left-fourth-row h2::before {
-  content: "";
-  height: 1.5rem;
-  position: absolute;
-  left: 1rem;
-  border: 0;
-  border-left: 0.3rem solid #f8d63a;
-}
-
-.betting-content-left .left-first-row p {
-  width: 100%;
-  height: 9.3rem;
-  background: #fff;
-  margin: 0 !important;
-}
-
-.betting-content-left .left-second-row {
-  width: 100%;
-  height: 11.3rem;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  padding: 0 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.betting-content-left .left-second-row h2 {
-  width: 100%;
-  height: 4.3rem;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #000000;
-  display: flex;
-  align-items: center;
-}
-
-.betting-content-left .left-second-row h2 img {
-  width: 2.27rem;
-  height: 2.3rem;
-  margin-right: 0.5rem;
-}
-
-.betting-content-left .left-second-row input {
-  width: 100%;
-  height: 4.8rem;
-  background: #e6e6e6;
-  border: 0;
-  outline: 0;
-  padding: 0 0 0 1rem;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: rgba(0, 0, 0, 0.45);
-}
-
-.betting-content-left .left-third-row {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 13rem;
-  background: #fff;
-  margin-bottom: 1rem;
-}
-
-.betting-content-left .left-third-row .btn-holder {
-  height: 4.7rem;
-  padding: 0 0.5rem;
+  height: 18.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  margin: 0 0 4rem 0;
 }
 
-.betting-content-left .left-third-row .btn-holder button {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #000000;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-  height: 3rem;
-  transition: border 0.3s ease;
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  -ms-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
+.main-contents-row .first-column .promo-box,
+.main-contents-row .second-column .promo-box {
+  width: 38.1944vw;
+  height: 18.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-.betting-content-left .left-third-row .btn-holder button:hover,
-.betting-content-left .left-third-row .btn-holder button:active,
-.betting-content-left .left-third-row .btn-holder button:focus {
-  border-bottom: 0.2rem solid #f8d63a;
-  transition: border 0.3s ease;
-  -webkit-transition: border 0.3s ease;
-  -moz-transition: border 0.3s ease;
-  -ms-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-}
-
-.betting-content-left .left-third-row .search-btn {
-  width: 100%;
-  height: 4.6rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0.5rem;
-}
-
-.betting-content-left .left-third-row .search-btn input {
-  width: 80%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.33rem;
-  color: rgba(0, 0, 0, 0.45);
-  border: 1px solid #bbb;
-  padding: 0.4rem 1rem;
-  border-right: 0;
-  border-radius: 0.5rem;
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-
-.betting-content-left .left-third-row .search-btn button {
-  width: 20% !important;
-  border: 1px solid #bbb;
-  border-left: 0;
-  height: 3rem;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-
-.betting-content-left .left-third-row .search-btn button img {
-  width: 1.82rem;
-  height: 1.8rem;
-}
-
-.left-fourth-row {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  background: #fff;
-}
-
-.left-fourth-row a {
+.main-contents-row .first-column .promo-box a,
+.main-contents-row .second-column .promo-box a {
   text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.35rem;
-  color: #000;
-  padding: 1rem 1rem;
-}
-
-.left-fourth-row a:hover,
-.left-fourth-row a:focus {
-  outline: 1px solid #aaa;
-}
-
-.betting-content-right {
-  width: 80vw !important;
-  display: flex;
-  flex-direction: column;
-}
-
-.betting-content-right #main-img {
-  width: 100%;
-  height: 23rem;
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
   overflow: hidden;
   border: 0;
-  border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-  margin: 0;
-}
-.betting-content-right #main-img img {
-  width: 50%;
-  transform: scale(1.018);
-  -webkit-transform: scale(1.018);
-  -moz-transform: scale(1.018);
-  -ms-transform: scale(1.018);
-  -o-transform: scale(1.018);
+  padding: 0;
+  width: 38.1944vw;
+  height: 18.5rem;
+  display: block;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-.betting-content-right .highlight-navigation {
-  width: 45%;
-  height: 6.25rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
+.main-contents-row .first-column .promo-box a:hover,
+.main-contents-row .first-column .promo-box a:focus,
+.main-contents-row .second-column .promo-box a:hover,
+.main-contents-row .second-column .promo-box a:focus {
+  box-shadow: 0 0.1rem 2.4rem #222;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
 }
 
-.betting-content-right .highlight-navigation a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #fff;
-  text-decoration: none;
-  padding-right: 1.5rem;
-  border-right: 0.2rem solid #fff;
-}
-
-.betting-content-right .highlight-navigation a:last-child {
-  border: 0 !important;
-}
-
-.betting-content-right .highlight-navigation a img {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-right: 0.5rem;
-}
-
-.betting-content-right .highlight-navigation a:hover,
-.betting-content-right .highlight-navigation a:focus {
-  text-decoration: underline;
-}
-
-.betting-content-right .content-navigation {
+.main-contents-row .first-column .promo-box a img,
+.main-contents-row .second-column .promo-box a img {
   width: 100%;
-  height: 4.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5rem;
-  background-color: #fff;
-  margin-bottom: 2rem;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-
-.betting-content-right .content-navigation a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.35rem;
-  color: #000;
-  cursor: pointer;
-}
-
-.betting-content-right .content-navigation a:hover,
-.betting-content-right .content-navigation a:focus {
-  text-decoration: underline;
-}
-
-.betting-content-body {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.betting-contents {
-  display: flex;
-  flex-direction: column;
-  width: 69.1vw !important;
-  padding: 1rem 1.5rem;
-  background-color: #fff;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-}
-
-.betting-contents-head {
-  padding: 0.4rem 0;
-  border-bottom: 1px solid #777;
-}
-
-.betting-contents-head,
-.betting-contents-body {
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-}
-
-.left-content {
-  width: 50% !important;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.right-content {
-  width: 50% !important;
-  display: flex;
-  flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
-}
-
-.betting-contents-head .left-content {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 1.35rem;
-  align-self: center !important;
-  color: #000;
-}
-
-.betting-contents-head .right-content p {
-  display: flex;
-  flex-direction: column;
-  width: 27%;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.betting-contents-head .right-content p span:last-child {
-  justify-self: flex-end;
-}
-
-.betting-contents-head .right-content p:first-child {
-  width: 30%;
-}
-
-.betting-contents-head .right-content p:last-child {
-  width: 30%;
-}
-
-.betting-contents-head .right-content p span {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.betting-contents-head .right-content p span:first-child {
-  justify-content: space-around !important;
-}
-
-.betting-contents-head .right-content p span img {
-  margin-right: 0.5rem;
-  width: 1.3rem;
-  height: 1.4rem;
-}
-
-.betting-contents-head .right-content p:last-child span:first-child {
-  width: 65%;
-}
-
-.betting-contents-body {
-  margin-bottom: 1rem;
-}
-
-.betting-contents-body .left-content img {
-  margin-right: 1rem;
-  cursor: pointer;
-  width: 2.1rem;
-  height: 2rem;
-}
-
-.betting-contents-body .left-content p {
-  display: flex;
-  flex-direction: column;
-  font-weight: 400;
-  font-size: 1.05rem;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 0;
-  color: #000;
-  margin-right: 0.8rem;
-}
-
-.betting-contents-body .left-content p:last-child {
-  font-weight: 500;
-  font-size: 1.35rem;
-}
-
-.betting-contents-body .left-content p span {
-  margin-bottom: 0.5rem;
-}
-
-.light-color {
-  color: rgba(0, 0, 0, 0.45);
-  font-weight: 400;
-}
-
-.betting-contents-body .right-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-self: center;
-}
-
-.betting-contents-body .right-content p {
-  display: flex;
-  flex-direction: row;
-  width: 27%;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 1.275rem;
-  color: #000;
-}
-
-.betting-contents-body .right-content p:first-child {
-  width: 30%;
-}
-
-.betting-contents-body .right-content p:last-child {
-  width: 30%;
-}
-
-.betting-contents-body .right-content p:last-child span:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #f8d63a;
-}
-.betting-contents-body .right-content p:last-child span:first-child img {
-  width: 1.4rem;
-  height: 1rem;
-}
-
-.betting-content-body-right {
-  width: 10vw;
-  height: 8.2rem;
-  background: #fff;
-}
-
-.betting-content-body-right h2 {
-  width: 100%;
-  height: 3.5rem;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: #ffffff;
-  background: #090d28;
-  display: flex;
-  align-items: center;
-  padding: 0 2rem;
-  position: relative;
-  margin-bottom: 0 !important;
-}
-
-.betting-content-body-right h2::before {
-  content: "";
-  height: 1.4rem;
-  position: absolute;
-  left: 1rem;
-  border: 0;
-  border-left: 0.3rem solid #f8d63a;
-}
-
-.betting-content-body-right h2 img {
-  width: 2.27rem;
-  height: 2.3rem;
-  margin-left: 1rem;
-}
-
-.betting-content-body-right p {
-  width: 100%;
-  height: 4.8rem;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #000000;
-  display: flex;
-  align-items: center;
-  padding: 0 0.5rem;
+  height: 100%;
+  transform: scale(1.015, 1.03);
+  -webkit-transform: scale(1.015, 1.03);
+  -moz-transform: scale(1.015, 1.03);
+  -ms-transform: scale(1.015, 1.03);
+  -o-transform: scale(1.015, 1.03);
 }
 
 /*----------------------------*/

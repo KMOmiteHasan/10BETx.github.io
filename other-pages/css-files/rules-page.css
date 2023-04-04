@@ -41,7 +41,7 @@ body {
 /* Rules Main Contents Section*/
 /*---------------------------------------*/
 .rulesMainContent {
-  width: 100%;
+  width: 100vw;
 }
 
 .main-container {
@@ -59,7 +59,7 @@ body {
   padding-bottom: 3rem;
   overflow: hidden;
   position: sticky;
-  top: 9.5rem;
+  top: 13rem !important;
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
   -moz-border-radius: 1.2rem;
@@ -75,7 +75,6 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   padding: 1.5rem;
-  overflow: hidden;
   position: relative;
   border-radius: 1.2rem;
   -webkit-border-radius: 1.2rem;
@@ -154,11 +153,10 @@ body {
   padding: 0;
 }
 
-/* Style the tab */
 .left-button-block {
   width: 100%;
   border: 0;
-  max-height: 100%;
+  height: 26rem;
   overflow: hidden;
   padding: 0.3rem 0.5rem 0.4rem;
   margin-top: 2rem;

@@ -33,131 +33,88 @@ body {
 /* JetX Page Main Content Section*/
 /*----------------------------*/
 .jetXMainContent {
-  background: #090d28 url("../../resources/jetx-page-img/main.jpg") no-repeat
-    center;
-  background-size: cover;
+  background: transparent;
   width: 100vw;
   height: 108rem !important;
   display: flex;
-  margin: 5rem 0;
+  margin: 0 0 5rem;
   flex-direction: column;
   align-items: center;
 }
 
 .jetXContent {
+  width: 83.3333vw;
+  height: 50rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: space-between;
-  width: 72vw;
-  height: 38.5rem;
-  margin: 14.5rem auto 0;
+  margin: 4rem auto 8rem;
 }
 
-.jetXFirstCol,
-.jetXSecondCol {
+.jetXContent .first-column,
+.jetXContent .second-column,
+.jetXContent .third-column {
   width: 100%;
+  height: 18.5rem;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
-  font-weight: 500;
-  font-size: 2rem;
+  margin: 0 0 4rem 0;
 }
 
-.jetXFirstCol .colOne,
-.jetXFirstCol .colTwo {
-  width: 14.2vw;
-  border-top: 1px solid #fff;
-  padding: 1rem 0;
-  position: relative;
+.jetXContent .first-column .promo-box,
+.jetXContent .second-column .promo-box,
+.jetXContent .third-column .promo-box {
+  width: 38.1944vw;
+  height: 18.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-.jetXFirstCol .colTwo {
-  width: 17vw;
-}
-
-.jetXSecondCol .colOne,
-.jetXSecondCol .colTwo {
-  width: 14.2vw;
-  border-bottom: 1px solid #fff;
-  position: relative;
-  padding: 1rem 0;
-}
-
-.jetXFirstCol .colOne::after {
-  content: "";
-  position: absolute;
-  top: 0.3rem;
-  right: -1rem;
-  width: 2rem;
-  height: 2rem;
-  border: 0;
-  border-top: 1px solid #fff;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-
-.jetXFirstCol .colTwo::after {
-  content: "";
-  position: absolute;
-  top: 0.3rem;
-  left: -1rem;
-  width: 2rem;
-  height: 2rem;
-  border: 0;
-  border-left: 1px solid #fff;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-
-.jetXSecondCol .colOne::after {
-  content: "";
-  position: absolute;
-  bottom: 0.3rem;
-  right: -1rem;
-  width: 2rem;
-  height: 2rem;
-  border: 0;
-  border-right: 1px solid #fff;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-
-.jetXSecondCol .colTwo::after {
-  content: "";
-  position: absolute;
-  bottom: 0.3rem;
-  left: -1rem;
-  width: 2rem;
-  height: 2rem;
-  border: 0;
-  border-bottom: 1px solid #fff;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-
-.jetXContent a {
+.jetXContent .first-column .promo-box a,
+.jetXContent .second-column .promo-box a,
+.jetXContent .third-column .promo-box a {
   text-decoration: none;
-  cursor: pointer;
-  color: #efc02c;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  width: 38.1944vw;
+  height: 18.5rem;
+  display: block;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
-.jetXContent a:hover,
-.jetXContent a:focus {
-  text-decoration: underline;
+.jetXContent .first-column .promo-box a:hover,
+.jetXContent .first-column .promo-box a:focus,
+.jetXContent .second-column .promo-box a:hover,
+.jetXContent .second-column .promo-box a:focus,
+.jetXContent .third-column .promo-box a:hover,
+.jetXContent .third-column .promo-box a:focus {
+  box-shadow: 0 0.1rem 2.4rem #222;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+.jetXContent .first-column .promo-box a img,
+.jetXContent .second-column .promo-box a img,
+.jetXContent .third-column .promo-box a img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.015, 1.03);
+  -webkit-transform: scale(1.015, 1.03);
+  -moz-transform: scale(1.015, 1.03);
+  -ms-transform: scale(1.015, 1.03);
+  -o-transform: scale(1.015, 1.03);
 }
 
 .jetXButton button {
