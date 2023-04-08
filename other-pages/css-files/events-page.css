@@ -33,7 +33,6 @@ body {
 
 .main-contents-row {
   width: 83.3333vw;
-  height: 50rem;
   display: flex;
   flex-direction: column;
   margin: 4rem auto;
@@ -41,7 +40,8 @@ body {
 }
 
 .main-contents-row .first-column,
-.main-contents-row .second-column {
+.main-contents-row .second-column,
+.main-contents-row .third-column {
   width: 100%;
   height: 18.5rem;
   display: flex;
@@ -52,7 +52,8 @@ body {
 }
 
 .main-contents-row .first-column .promo-box,
-.main-contents-row .second-column .promo-box {
+.main-contents-row .second-column .promo-box,
+.main-contents-row .third-column .promo-box {
   width: 38.1944vw;
   height: 18.5rem;
   border-radius: 1rem;
@@ -63,7 +64,8 @@ body {
 }
 
 .main-contents-row .first-column .promo-box a,
-.main-contents-row .second-column .promo-box a {
+.main-contents-row .second-column .promo-box a,
+.main-contents-row .third-column .promo-box a {
   text-decoration: none;
   overflow: hidden;
   border: 0;
@@ -81,7 +83,9 @@ body {
 .main-contents-row .first-column .promo-box a:hover,
 .main-contents-row .first-column .promo-box a:focus,
 .main-contents-row .second-column .promo-box a:hover,
-.main-contents-row .second-column .promo-box a:focus {
+.main-contents-row .second-column .promo-box a:focus,
+.main-contents-row .third-column .promo-box a:hover,
+.main-contents-row .third-column .promo-box a:focus {
   box-shadow: 0 0.1rem 2.4rem #222;
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
@@ -91,7 +95,8 @@ body {
 }
 
 .main-contents-row .first-column .promo-box a img,
-.main-contents-row .second-column .promo-box a img {
+.main-contents-row .second-column .promo-box a img,
+.main-contents-row .third-column .promo-box a img {
   width: 100%;
   height: 100%;
   transform: scale(1.015, 1.03);

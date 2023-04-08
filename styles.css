@@ -615,7 +615,7 @@ footer {
 }
 
 .footer-row .first-column ul {
-  padding: 0 7.5rem 0 0;
+  padding: 0 6rem 0 0;
 }
 
 .footer-row .fourth-column ul {
@@ -668,6 +668,10 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.first-column ul li a span {
+  font-size: 1.2rem !important;
 }
 
 .fourth-column {
